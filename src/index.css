@@ -1,0 +1,40 @@
+.navbar-fuente.active.tech-one {
+  color: #000;
+  text-shadow: 0 0 5px #80cbc4, 0 0 10px #80cbc4, 0 0 15px #80cbc4;
+}
+
+.logo-brillo {
+  color: #000;
+  text-shadow: 0 0 5px #80cbc4, 0 0 10px #80cbc4, 0 0 15px #80cbc4;
+  font-weight: bold;
+}
+.glow-border {
+  border: 2px solid #80cbc4;
+  box-shadow: 0 0 10px #80cbc4, 0 0 20px #80cbc4, 0 0 30px #80cbc4;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbar-fuente {
+  font-family: "VT323", monospace;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.botones {
+  background: linear-gradient(145deg, #b2ffff, #66cccc);
+  color: #001f1f;
+  border: 2px solid #00cccc;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px #00cccc;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+  transition: all 0.25s ease;
+}
+
+.botonesActivar:active {
+  transform: scale(0.97);
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+}

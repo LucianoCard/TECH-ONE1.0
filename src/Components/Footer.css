@@ -1,0 +1,45 @@
+.footer-contenedor {
+  background-color: #f8f9fa;
+  color: #000000;
+  font-family: "VT323", monospace;
+  padding: 2rem 0;
+}
+
+.footer-marca {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000;
+  text-shadow: 0 0 5px #80cbc4, 0 0 10px #80cbc4, 0 0 15px #80cbc4;
+  letter-spacing: 3px;
+}
+
+.enlace-footer {
+  color: #333333;
+  font-size: 1.1rem;
+  margin: 0 15px;
+  padding: 5px 0;
+  text-decoration: none;
+}
+
+.enlace-footer:hover {
+  color: #80cbc4;
+  text-shadow: 0 0 10px #80cbc4;
+}
+
+.iconos-redes {
+  font-size: 1.8rem;
+}
+
+.icono-red-social {
+  color: #000000;
+  margin: 0 10px;
+}
+.icono-red-social:hover {
+  color: #80cbc4;
+}
+
+.copy-footer {
+    font-size: 0.8rem;
+    color: #aaaaaa;
+    margin-top: 2rem;
+}

@@ -1,0 +1,69 @@
+.login-titulo {
+  font-family: "VT323", monospace;
+  font-size: 2.8rem;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  text-shadow: 0 0 5px #80cbc4, 0 0 10px #80cbc4, 0 0 15px #80cbc4;
+}
+
+.login-subtitulo {
+  font-family: "VT323", monospace;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333333;
+  text-shadow: 0 0 5px #b9dfbb, 0 0 10px #b9dfbb, 0 0 15px #b9dfbb;
+}
+
+.login-container .form-label {
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #80cbc4;
+  font-weight: bold;
+}
+
+.login-container .form-control {
+  font-family: "VT323", monospace;
+  font-size: 0.9rem;
+  border: 2px solid #99d5cf;
+  background-color: #fefffe;
+}
+
+.login-container .form-control:focus {
+  border-color: #99d5cf;
+  box-shadow: 0 0 8px #99d5cf;
+}
+
+.login-container .btn-primary {
+  font-family: "VT323", monospace;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 2px solid #80cbc4;
+  color: #80cbc4;
+  margin-top: 1rem;
+  box-shadow: 0 0 8px #99d5cf;
+  letter-spacing: 1.3px;
+}
+
+.login-container .btn-primary:hover {
+  background-color: #80cbc4;
+  color: #fefffe;
+  box-shadow: 0 0 15px #80cbc4;
+}
+
+.small-link {
+  font-family: "VT323", monospace;
+  font-size: 0.9rem;
+  color: #56d3fa;
+  text-decoration: none;
+}
+
+.small-link:hover {
+  text-decoration: underline;
+  color: #00bcd4;
+}
+
+.login-container p {
+  font-family: "VT323", monospace;
+  font-size: 0.9rem;
+}
