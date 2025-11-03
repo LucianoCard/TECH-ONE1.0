@@ -8,7 +8,7 @@ export function SobreNosotros() {
       <main>
         <div className="glow-border row">
           <div className=" d-flex justify-content-center mt-5 mb-5 col-12">
-            <Card className="bg-dark text-white w-25  mt-5 ">
+            <Card className="bg-dark text-white w-25 mt-5 ">
               <Card.Img
                 src="src\Components\imagenLOGO\f35f8dcd-d875-4706-b6db-36c7791c4956.jpg"
                 alt="Card image"
