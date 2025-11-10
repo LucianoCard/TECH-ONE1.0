@@ -8,6 +8,18 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+async function productos() {
+  const respuesta = await fetch("https://localhost:3000/Productos");
+  const datos = await respuesta.json();
+  console.log("DATOS OBTENIDOS", datos);
+  const datosreturn = (datos) => {
+    datos.map({
+      nombre: nombre,
+      marca: marca,
+    });
+  };
+}
+
 export function Productos() {
   return (
     <>
@@ -83,7 +95,7 @@ export function Productos() {
             <Card style={{ width: "18rem" }}>
               <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title> data.nombre </Card.Title>
                 <Card.Text>
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
