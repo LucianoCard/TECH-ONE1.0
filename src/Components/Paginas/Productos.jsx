@@ -8,19 +8,20 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-async function productos() {
-  const respuesta = await fetch("https://localhost:3000/Productos");
-  const datos = await respuesta.json();
-  console.log("DATOS OBTENIDOS", datos);
-  const datosreturn = (datos) => {
-    datos.map({
-      nombre: nombre,
-      marca: marca,
-    });
-  };
-}
+import { useState } from "react";
 
 export function Productos() {
+  let [filtro, Setfiltro] = useState("");
+  let [guardarProductos, SetguardarProductos] = useState([]);
+
+  fetch("http://localhost:3000/productos?nombre=" + filtro)
+    .then(function (datosDelServidor) {
+      return datosDelServidor.json();
+    })
+    .then(function (producto) {
+      return SetguardarProductos(producto);
+    });
+
   return (
     <>
       <Header></Header>
@@ -36,7 +37,11 @@ export function Productos() {
                   style={{ maxHeight: "100px" }}
                   navbarScroll
                 >
-                  <NavDropdown title="Produtos" id="navbarScrollingDropdown">
+                  <NavDropdown
+                    onChange={(event) => alert()}
+                    title="Produtos"
+                    id="navbarScrollingDropdown"
+                  >
                     <NavDropdown.Item href="#action3">Coolers</NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action3">
@@ -91,19 +96,18 @@ export function Productos() {
         </div>
 
         <div className="row justify-content-center pt-5 glow-border ">
-          <div className="col-3 ms-5 mb-4">
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title> data.nombre </Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </div>
+          {guardarProductos.map((item) => (
+            <div key={item.id} className="col-3 ms-5 mb-4">
+              <Card style={{ width: "18rem" }}>
+                <Card.Img variant="top" src={item.imagen} />
+                <Card.Body>
+                  <Card.Title> {item.nombre} </Card.Title>
+                  <Card.Text>{item.descripcion}</Card.Text>
+                  <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
         </div>
       </main>
       <Footer></Footer>;
