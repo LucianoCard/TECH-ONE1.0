@@ -5,13 +5,31 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export function IniciarSesion() {
-  const [usuario, setUsuario] = useState("");
+  const [email, setEmail] = useState("");
   const [contraseña, setContraseña] = useState("");
+  const navigate = useNavigate();
+
   const handleSubmit = (evento) => {
     evento.preventDefault();
+
+    if (!email || !contraseña) {
+      return; 
+    }
+
+    const url = `http://localhost:3000/usuarios?email=${email}&password=${contraseña}`;
+
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.length > 0) {
+          navigate("/");
+        }
+      })
+      .catch((error) => {
+      });
   };
   return (
     <>
@@ -28,8 +46,8 @@ export function IniciarSesion() {
               <Form.Control
                 type="email"
                 placeholder="Introduce tu email"
-                value={usuario}
-                onChange={(evento) => setUsuario(evento.target.value)}
+                value={email}
+                onChange={(evento) => setEmail(evento.target.value)}
               />
             </Form.Group>
 

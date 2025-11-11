@@ -2,6 +2,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import "./CrearCuenta.css";
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
@@ -12,21 +13,49 @@ export function CrearCuenta() {
   const [email, setEmail] = useState("");
   const [contraseña, setContraseña] = useState("");
   const [confirmarContraseña, setConfirmarContraseña] = useState("");
+
+  const navigate = useNavigate();
+
   const handleSubmit = (evento) => {
     evento.preventDefault();
 
     if (contraseña !== confirmarContraseña) {
+      console.error("Las contraseñas no coinciden");
       return;
     }
 
     if (!usuario || !email || !contraseña) {
+      console.error("faltan campos por completar");
       return;
     }
-    setUsuario("");
-    setEmail("");
-    setContraseña("");
-    setConfirmarContraseña("");
+
+    const usuarioNuevo = {
+      nombre: usuario,
+      email: email,
+      password: contraseña,
+      foto: "/imagenes/usuarios/avatar-default.png",
+    };
+
+    fetch("http://localhost:3000/usuarios", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(usuarioNuevo),
+    })
+      .then((response) => {
+        if (response.ok) {
+          setUsuario("");
+          setEmail("");
+          setContraseña("");
+          setConfirmarContraseña("");
+
+          navigate("/login");
+        }
+      })
+      .catch((error) => {
+        console.error("Error en la solicitud:", error);
+      });
   };
+
   return (
     <>
       <Header />
@@ -85,9 +114,9 @@ export function CrearCuenta() {
           <div className="text-center mt-3">
             <p className="mt-2">
               ¿Ya tienes una cuenta?{" "}
-              <a href="/login" className="small-link">
+              <Link to="/login" className="small-link">
                 Inicia sesión aquí
-              </a>
+              </Link>
             </p>
           </div>
         </div>
