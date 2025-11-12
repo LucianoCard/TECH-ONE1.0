@@ -38,3 +38,6 @@
   transform: scale(0.97);
   box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
 }
+.imagen-Logo {
+  filter: brightness(0.4);
+}

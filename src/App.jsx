@@ -11,7 +11,7 @@ function App() {
     <div>
       <Header></Header>
       <main>
-        <div id="carrusel" className="border">
+        <div id="carrusel" className="">
           <CarouselFadeExample></CarouselFadeExample>
         </div>
       </main>

@@ -7,7 +7,7 @@ export function SobreEsteProyecto() {
   return (
     <>
       <Header></Header>
-      <main className="mt-5 mb-5 glow-border pb-4 pt-4">
+      <main className="  glow-border pb-4 pt-4">
         <div className="d-flex justify-content-center row navbar-fuente gap-4">
           <h1 className="d-flex justify-content-center col-12 logo-brillo">
             Integrantes:
