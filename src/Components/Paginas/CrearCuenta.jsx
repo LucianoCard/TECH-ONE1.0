@@ -7,25 +7,27 @@ import { Link, useNavigate } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Alert from "react-bootstrap/Alert";
 
 export function CrearCuenta() {
   const [usuario, setUsuario] = useState("");
   const [email, setEmail] = useState("");
   const [contraseña, setContraseña] = useState("");
   const [confirmarContraseña, setConfirmarContraseña] = useState("");
+  const [mensajeError, setMensajeError] = useState("");
 
   const navigate = useNavigate();
 
   const handleSubmit = (evento) => {
     evento.preventDefault();
 
-    if (contraseña !== confirmarContraseña) {
-      console.error("Las contraseñas no coinciden");
+    if (!usuario || !email || !contraseña || !confirmarContraseña) {
+      setMensajeError("Por favor, completa todos los campos.");
       return;
     }
 
-    if (!usuario || !email || !contraseña) {
-      console.error("faltan campos por completar");
+    if (contraseña !== confirmarContraseña) {
+      setMensajeError("Las contraseñas no coinciden.");
       return;
     }
 
@@ -53,6 +55,9 @@ export function CrearCuenta() {
       })
       .catch((error) => {
         console.error("Error en la solicitud:", error);
+        setMensajeError(
+          "No se pudo conectar con el servidor. Intente más tarde."
+        );
       });
   };
 
@@ -63,6 +68,11 @@ export function CrearCuenta() {
         <div className="login-container p-5 rounded">
           <h2 className="login-titulo">Crear Cuenta</h2>
 
+          {mensajeError && (
+            <Alert variant="danger" className="mt-3">
+              {mensajeError}
+            </Alert>
+          )}
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicUsername">
               <Form.Label>Nombre de Usuario:</Form.Label>
@@ -70,7 +80,10 @@ export function CrearCuenta() {
                 type="text"
                 placeholder="Introduce tu usuario"
                 value={usuario}
-                onChange={(evento) => setUsuario(evento.target.value)}
+                onChange={(evento) => {
+                  setUsuario(evento.target.value);
+                  setMensajeError("");
+                }}
               />
             </Form.Group>
 
@@ -80,7 +93,10 @@ export function CrearCuenta() {
                 type="email"
                 placeholder="Introduce tu email"
                 value={email}
-                onChange={(evento) => setEmail(evento.target.value)}
+                onChange={(evento) => {
+                  setEmail(evento.target.value);
+                  setMensajeError("");
+                }}
               />
             </Form.Group>
 
@@ -90,7 +106,10 @@ export function CrearCuenta() {
                 type="password"
                 placeholder="Introduce una contraseña segura"
                 value={contraseña}
-                onChange={(evento) => setContraseña(evento.target.value)}
+                onChange={(evento) => {
+                  setContraseña(evento.target.value);
+                  setMensajeError("");
+                }}
               />
             </Form.Group>
 
@@ -100,9 +119,10 @@ export function CrearCuenta() {
                 type="password"
                 placeholder="Vuelve a escribir la contraseña"
                 value={confirmarContraseña}
-                onChange={(evento) =>
-                  setConfirmarContraseña(evento.target.value)
-                }
+                onChange={(evento) => {
+                  setConfirmarContraseña(evento.target.value);
+                  setMensajeError("");
+                }}
               />
             </Form.Group>
 

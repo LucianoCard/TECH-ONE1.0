@@ -4,7 +4,7 @@ import "./IniciarSesion.css";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import Alert from "react-bootstrap";
+import Alert from "react-bootstrap/Alert";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 

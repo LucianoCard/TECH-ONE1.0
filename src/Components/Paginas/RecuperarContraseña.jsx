@@ -7,18 +7,23 @@ import { Form } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
+import Alert from "react-bootstrap/Alert";
+
 export function RecuperarContraseña() {
   const [email, setEmail] = useState("");
+  const [mensajeError, setMensajeError] = useState("");
+  const [mensajeExito, setMensajeExito] = useState("");
 
   const handleSubmit = (evento) => {
     evento.preventDefault();
     if (!email) {
-      alert("Por favor, introduce tu email.");
+      setMensajeError("Por favor, introduce tu email.");
+      setMensajeExito("");
       return;
     }
 
-    console.log("Email para recuperación:", email);
-    alert(`Se ha enviado un correo de recuperación a ${email}`);
+    setMensajeExito(`Se ha enviado un correo de recuperación a ${email}`);
+    setMensajeError("");
     setEmail("");
   };
 
@@ -30,9 +35,21 @@ export function RecuperarContraseña() {
         <div className="login-container p-5 rounded">
           <h2 className="login-titulo">Recuperar Contraseña</h2>
           <p className="login-subtitulo">
-            Si olvidaste tu contraseña, puedes recuperarla. Te enviaremos las instrucciones a tu correo electrónico.
+            Si olvidaste tu contraseña, puedes recuperarla. Te enviaremos las
+            instrucciones a tu correo electrónico.
           </p>
 
+          {mensajeError && (
+            <Alert variant="danger" className="mt-3">
+              {mensajeError}
+            </Alert>
+          )}
+
+          {mensajeExito && (
+            <Alert variant="success" className="mt-3">
+              {mensajeExito}
+            </Alert>
+          )}
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-4" controlId="formBasicEmail">
               <Form.Label>Email:</Form.Label>
@@ -40,7 +57,11 @@ export function RecuperarContraseña() {
                 type="email"
                 placeholder="Introduce tu email"
                 value={email}
-                onChange={(evento) => setEmail(evento.target.value)}
+                onChange={(evento) => {
+                  setEmail(evento.target.value);
+                  setMensajeError("");
+                  setMensajeExito("");
+                }}
               />
             </Form.Group>
 
