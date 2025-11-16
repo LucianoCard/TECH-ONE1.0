@@ -1,0 +1,12 @@
+.login-container .alert-success {
+  font-family: "VT323", monospace;
+  font-size: 0.9rem;
+  text-align: center;
+  background-color: rgba(185, 223, 187, 0.2);
+  color: #388e3c;
+  border-color: #388e3c;
+  padding: 0.5rem;
+  border-width: 2px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(185, 223, 187, 0.5);
+}

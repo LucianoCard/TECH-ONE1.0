@@ -4,14 +4,42 @@ import "./IniciarSesion.css";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Alert from "react-bootstrap/Alert";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export function IniciarSesion() {
-  const [usuario, setUsuario] = useState("");
+  const [email, setEmail] = useState("");
   const [contraseña, setContraseña] = useState("");
+  const [mensajeError, setMensajeError] = useState("");
+  const navigate = useNavigate();
+
   const handleSubmit = (evento) => {
     evento.preventDefault();
+
+    if (!email || !contraseña) {
+      setMensajeError("Por favor, completa todos los campos.");
+      return;
+    }
+
+    const url = `http://localhost:3000/usuarios?email=${email}&password=${contraseña}`;
+
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.length > 0) {
+          setMensajeError("");
+          navigate("/");
+        } else {
+          setMensajeError("Email o contraseña incorrectos.");
+        }
+      })
+      .catch((error) => {
+        console.error("Error de solicitud:", error);
+        setMensajeError(
+          "No se pudo conectar con el servidor. Intente más tarde."
+        );
+      });
   };
   return (
     <>
@@ -22,14 +50,22 @@ export function IniciarSesion() {
           <h2 className="login-titulo">Iniciar Sesión</h2>
           <p className="login-subtitulo">Autentícate para continuar</p>
 
+          {mensajeError && (
+            <Alert variant="danger" className="mt-3">
+              {mensajeError}
+            </Alert>
+          )}
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email:</Form.Label>
               <Form.Control
                 type="email"
                 placeholder="Introduce tu email"
-                value={usuario}
-                onChange={(evento) => setUsuario(evento.target.value)}
+                value={email}
+                onChange={(evento) => {
+                  setEmail(evento.target.value);
+                  setMensajeError("");
+                }}
               />
             </Form.Group>
 
@@ -39,7 +75,10 @@ export function IniciarSesion() {
                 type="password"
                 placeholder="Introduce tu contraseña"
                 value={contraseña}
-                onChange={(evento) => setContraseña(evento.target.value)}
+                onChange={(evento) => {
+                  setContraseña(evento.target.value);
+                  setMensajeError("");
+                }}
               />
             </Form.Group>
 
