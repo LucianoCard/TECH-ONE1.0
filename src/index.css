@@ -15,11 +15,6 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.navbar-fuente {
-  font-family: "VT323", monospace;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-}
 .botones {
   background: linear-gradient(145deg, #b2ffff, #66cccc);
   color: #001f1f;
@@ -40,4 +35,18 @@
 }
 .imagen-Logo {
   filter: brightness(0.4);
+}
+
+.navbar .navbar-fuente {
+  font-family: "VT323", monospace;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #333333;
+  vertical-align: middle;
+}
+
+.logo-brillo,
+.navbar .navbar-fuente.active {
+  color: #000;
+  text-shadow: 0 0 5px #80cbc4, 0 0 10px #80cbc4, 0 0 15px #80cbc4;
 }

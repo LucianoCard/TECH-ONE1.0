@@ -1,18 +1,25 @@
-import Header from "../Header";
-import Footer from "../Footer";
-import "./IniciarSesion.css";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Alert from "react-bootstrap/Alert";
-import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+
+import { login } from "../../app/slices/authSlice";
+
+import Header from "../Header";
+import Footer from "../Footer";
+import "./IniciarSesion.css";
 
 export function IniciarSesion() {
   const [email, setEmail] = useState("");
   const [contraseña, setContraseña] = useState("");
   const [mensajeError, setMensajeError] = useState("");
+
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleSubmit = (evento) => {
     evento.preventDefault();
@@ -28,6 +35,8 @@ export function IniciarSesion() {
       .then((response) => response.json())
       .then((data) => {
         if (data.length > 0) {
+          const usuarioLogueado = data[0];
+          dispatch(login(usuarioLogueado));
           setMensajeError("");
           navigate("/");
         } else {
@@ -41,6 +50,7 @@ export function IniciarSesion() {
         );
       });
   };
+
   return (
     <>
       <Header />
@@ -55,6 +65,7 @@ export function IniciarSesion() {
               {mensajeError}
             </Alert>
           )}
+
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email:</Form.Label>
