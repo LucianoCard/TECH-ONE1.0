@@ -7,6 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 import { logout } from "../app/slices/authSlice";
+import { toggleCarrito } from "../app/slices/carritoSlice";
 
 function Header() {
   const dispatch = useDispatch();
@@ -17,6 +18,10 @@ function Header() {
   const handleLogout = () => {
     dispatch(logout());
     navigate("/");
+  };
+
+  const handleShowCart = () => {
+    dispatch(toggleCarrito()); 
   };
 
   return (
@@ -77,6 +82,12 @@ function Header() {
                 </Nav.Link>
               </>
             )}
+            <Nav.Link
+              onClick={handleShowCart}
+              className="navbar-fuente puntero"
+            >
+              <i className="bi bi-cart"></i>[Carrito]
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
