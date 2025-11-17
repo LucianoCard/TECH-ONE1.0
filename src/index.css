@@ -41,3 +41,10 @@
 .imagen-Logo {
   filter: brightness(0.4);
 }
+.img-carousel {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+  background: linear-gradient(90deg, #dffefc, #ffffff);
+  padding: 20px;
+}

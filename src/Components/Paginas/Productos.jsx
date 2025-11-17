@@ -158,7 +158,7 @@ export function Productos() {
                       className=" botonesActivar logo-brillo botones    "
                       href=""
                     >
-                      Agregar al carrito <i class="bi bi-cart"></i>
+                      Agregar al carrito <i className="bi bi-cart"></i>
                     </Button>
                   </div>
                 </Card.Body>

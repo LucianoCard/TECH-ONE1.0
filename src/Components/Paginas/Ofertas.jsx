@@ -2,27 +2,48 @@ import Header from "../Header";
 import Footer from "../Footer";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+
 import { useState, useEffect } from "react";
 
+const CANTIDAD_OFERTAS = 6;
+
 export function Ofertas() {
-  let [oferta, Setoferta] = useState("");
-  let [guardarProductos, SetguardarProductos] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/productos?" + oferta)
+    fetch("http://localhost:3000/productos")
       .then((datosDelServidor) => datosDelServidor.json())
-      .then((producto) => SetguardarProductos(producto));
-  }, [oferta]);
+      .then((productos) => {
+        if (productos && productos.length > 0) {
+          const ofertas = obtenerOfertasAleatorias(productos);
+          SetofertasAleatorias(ofertas);
+        }
+      });
+  }, []);
+
+  let [ofertasAleatorias, SetofertasAleatorias] = useState([]);
+  const obtenerOfertasAleatorias = (productos) => {
+    const productosClonados = [...productos];
+    const ofertasSeleccionadas = [];
+    const limite = Math.min(CANTIDAD_OFERTAS, productosClonados.length);
+    for (let i = 0; i < limite; i++) {
+      const indiceAleatorio = Math.floor(
+        Math.random() * productosClonados.length
+      );
+
+      ofertasSeleccionadas.push(productosClonados[indiceAleatorio]);
+      productosClonados.splice(indiceAleatorio, 1);
+    }
+    return ofertasSeleccionadas;
+  };
+
   return (
     <div>
       <Header></Header>
       <main>
-        <div className="row justify-content-center pt-5  ">
-          {guardarProductos.map((item) => (
+        <h1 className=" logo-brillo d-flex justify-content-center glow-border mt-4 p-4">
+          Ofertas del dia!
+        </h1>
+        <div className="row justify-content-center pt-5">
+          {ofertasAleatorias.map((item) => (
             <div key={item.id} className="col-3 ms-5 mb-4 ">
               <Card
                 style={{ width: "18rem" }}
@@ -34,12 +55,12 @@ export function Ofertas() {
                     {" "}
                     {item.nombre}{" "}
                   </Card.Title>
-                  <Card.Text className="d-flex justify-content-center text-center  ">
+                  <Card.Text className="d-flex justify-content-center text-center  ">
                     {item.descripcion}
                   </Card.Text>
                   <div className="d-flex justify-content-center">
                     <Button
-                      className=" botonesActivar logo-brillo botones    "
+                      className=" botonesActivar logo-brillo botones    "
                       href=""
                     >
                       Agregar al carrito <i class="bi bi-cart"></i>
