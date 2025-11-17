@@ -4,12 +4,16 @@ import {
   toggleCarrito,
   eliminarProducto,
   vaciarCarrito,
+  aumentarCantidad,
+  disminuirCantidad,
 } from "../../app/slices/carritoSlice";
 import "./Carrito.css";
 
 export function Carrito() {
   const { isOpen, items } = useSelector((state) => state.carrito);
   const dispatch = useDispatch();
+
+  const total = items.reduce((acc, item) => acc + item.precio * item.cantidad, 0);
 
   return (
     <Offcanvas
@@ -28,10 +32,18 @@ export function Carrito() {
           <div>
             {items.map((item) => (
               <div className="carrito-item" key={item.id}>
-                <p className="carrito-item-nombre">
-                  {`[ ${item.nombre} ${item.modelo} ]`}
-                </p>
-                <p className="carrito-item-cantidad">Cantidad: {item.cantidad}</p>
+                <img src={item.imagen} alt={item.nombre} className="carrito-item-imagen" />
+                <div className="carrito-item-detalles">
+                  <p className="carrito-item-nombre">
+                    {`[ ${item.nombre} ${item.modelo} ]`}
+                  </p>
+                  <p className="carrito-item-precio">Precio: ${item.precio}</p>
+                  <div className="controles-cantidad">
+                    <button className="control-btn" onClick={() => dispatch(disminuirCantidad(item.id))}>-</button>
+                    <span>Cantidad: {item.cantidad}</span>
+                    <button className="control-btn" onClick={() => dispatch(aumentarCantidad(item.id))}>+</button>
+                  </div>
+                </div>
                 <button
                   className="carrito-boton-eliminar"
                   onClick={() => dispatch(eliminarProducto(item.id))}
@@ -40,6 +52,10 @@ export function Carrito() {
                 </button>
               </div>
             ))}
+
+            <div className="carrito-total">
+              <h3>Total: ${total.toFixed(2)}</h3>
+            </div>
 
             <div className="carrito-acciones">
               <button className="carrito-boton">
