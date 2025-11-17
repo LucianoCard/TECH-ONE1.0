@@ -28,6 +28,22 @@ export const carritoSlice = createSlice({
     vaciarCarrito: (state) => {
       state.items = [];
     },
+    aumentarCantidad: (state, action) => {
+      const item = state.items.find((item) => item.id === action.payload);
+      if (item) {
+        item.cantidad++;
+      }
+    },
+    disminuirCantidad: (state, action) => {
+      const item = state.items.find((item) => item.id === action.payload);
+      if (item) {
+        if (item.cantidad === 1) {
+          state.items = state.items.filter((i) => i.id !== action.payload);
+        } else {
+          item.cantidad--;
+        }
+      }
+    },
   },
 });
 
@@ -36,6 +52,8 @@ export const {
   añadirProducto,
   eliminarProducto,
   vaciarCarrito,
+  aumentarCantidad,
+  disminuirCantidad,
 } = carritoSlice.actions;
 
 export default carritoSlice.reducer;
