@@ -62,84 +62,84 @@ export function Productos() {
                 >
                   <NavDropdown title="Filtro" id="navbarScrollingDropdown">
                     <NavDropdown.Item
-                      href="#action3"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=1")}
                     >
                       Coolers
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action3"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=2")}
                     >
                       Escritorios
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action3"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=3")}
                     >
                       Fuentes
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action3"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=12")}
                     >
                       Gabinetes
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action3"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=4")}
                     >
                       Graficas
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action3"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=5")}
                     >
                       Monitores
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action3"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=6")}
                     >
                       Motherboards
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action3"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=7")}
                     >
                       Mouses
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action4"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=8")}
                     >
                       Procesadores
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action5"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=9")}
                     >
                       Rams
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action4"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=10")}
                     >
                       Sillas
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action4"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=11")}
                     >
                       Teclados
