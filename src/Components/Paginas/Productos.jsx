@@ -8,11 +8,17 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import Alert from "react-bootstrap/Alert";
 import { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { añadirProducto } from "../../app/slices/carritoSlice";
+import { Carrito } from "../Carrito/Carrito";
 
 export function Productos() {
+  const dispatch = useDispatch();
   let [filtro, Setfiltro] = useState("");
   let [guardarProductos, SetguardarProductos] = useState([]);
+  const [mensajeAlerta, setMensajeAlerta] = useState("");
 
   useEffect(() => {
     fetch("http://localhost:3000/productos?" + filtro)
@@ -20,10 +26,27 @@ export function Productos() {
       .then((producto) => SetguardarProductos(producto));
   }, [filtro]);
 
+  const handleAgregar = (item) => {
+    dispatch(añadirProducto(item));
+    setMensajeAlerta("Producto añadido correctamente");
+    setTimeout(() => {
+      setMensajeAlerta("");
+    }, 3000);
+  };
+
   return (
     <>
       <Header></Header>
+      <Carrito />
       <main>
+        {mensajeAlerta && (
+          <Alert
+            variant="success"
+            className="alerta-flotante alerta-personalizada"
+          >
+            {mensajeAlerta}
+          </Alert>
+        )}
         <div className="mt-4 ">
           <Navbar expand="lg " className="bg-body-tertiary border-top">
             <Container>
@@ -39,84 +62,84 @@ export function Productos() {
                 >
                   <NavDropdown title="Filtro" id="navbarScrollingDropdown">
                     <NavDropdown.Item
-                      href="#action3"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=1")}
                     >
                       Coolers
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action3"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=2")}
                     >
                       Escritorios
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action3"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=3")}
                     >
                       Fuentes
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action3"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=12")}
                     >
                       Gabinetes
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action3"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=4")}
                     >
                       Graficas
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action3"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=5")}
                     >
                       Monitores
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action3"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=6")}
                     >
                       Motherboards
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action3"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=7")}
                     >
                       Mouses
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action4"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=8")}
                     >
                       Procesadores
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action5"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=9")}
                     >
                       Rams
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action4"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=10")}
                     >
                       Sillas
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
-                      href="#action4"
+                      href=""
                       onClick={() => Setfiltro("categoriaId=11")}
                     >
                       Teclados
@@ -147,8 +170,7 @@ export function Productos() {
                 <Card.Img src={item.imagen} />
                 <Card.Body>
                   <Card.Title className="d-flex justify-content-center logo-brillo ">
-                    {" "}
-                    {item.nombre}{" "}
+                    {`${item.nombre} ${item.modelo}`}
                   </Card.Title>
                   <Card.Text className="d-flex justify-content-center text-center  ">
                     {item.descripcion}
@@ -156,7 +178,7 @@ export function Productos() {
                   <div className="d-flex justify-content-center">
                     <Button
                       className=" botonesActivar logo-brillo botones    "
-                      href=""
+                      onClick={() => handleAgregar(item)}
                     >
                       Agregar al carrito <i className="bi bi-cart"></i>
                     </Button>

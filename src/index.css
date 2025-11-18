@@ -15,11 +15,6 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.navbar-fuente {
-  font-family: "VT323", monospace;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-}
 .botones {
   background: linear-gradient(145deg, #b2ffff, #66cccc);
   color: #001f1f;
@@ -47,4 +42,85 @@
   object-fit: cover;
   background: linear-gradient(90deg, #dffefc, #ffffff);
   padding: 20px;
+}
+
+.navbar .navbar-fuente {
+  font-family: "VT323", monospace;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #333333;
+  vertical-align: middle;
+}
+
+.logo-brillo,
+.navbar .navbar-fuente.active {
+  color: #000;
+  text-shadow: 0 0 5px #80cbc4, 0 0 10px #80cbc4, 0 0 15px #80cbc4;
+}
+
+.puntero {
+  cursor: pointer;
+}
+
+.catalogo-contenedor {
+  padding: 20px;
+}
+
+.catalogo-grilla {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.producto-tarjeta {
+  border: 1px solid #eee;
+  padding: 15px;
+  width: 240px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.producto-imagen {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.producto-nombre {
+  font-size: 1rem;
+  font-weight: bold;
+  min-height: 40px;
+}
+
+.producto-precio {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.alert.alerta-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: auto;
+}
+
+.alerta-personalizada.alert-success {
+  font-family: "VT323", monospace;
+  font-size: 0.9rem;
+  text-align: center;
+  background-color: #d4edda;
+  color: #388e3c;
+  border-color: #388e3c;
+  padding: 0.5rem 1rem;
+  border-width: 2px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(185, 223, 187, 0.5);
 }
