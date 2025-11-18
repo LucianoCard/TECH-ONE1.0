@@ -5,21 +5,35 @@ export function CarouselFadeExample() {
   return (
     <Carousel fade className="glow-border m-3 mt-5">
       <Carousel.Item>
-        <ExampleCarouselImage text="PC" />
+        <img
+          className="d-block w-100 img-carousel"
+          src="/imagenes/gabinetes/corsair/icue-500x-rgb-mid-tower.jpg"
+          alt="Gabinete Corsair"
+        />
         <Carousel.Caption>
           <h3 className="tech-one">PC Armadas!</h3>
           <p className="tech-one">Las mejores PC armadas!.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <ExampleCarouselImage text="Piezas" />
+        <img
+          className="d-block w-100 img-carousel"
+          src="public/imagenes/monitores/acer/v277e.jpg"
+          alt="Monitor ACER"
+        />
         <Carousel.Caption>
-          <h3 className="tech-one">Piezas para equipos</h3>
-          <p className="tech-one">Las mejores piezas para armar tu equipo!.</p>
+          <h3 className="tech-one">Comodidad!</h3>
+          <p className="tech-one">
+            Las mejores piezas para la comodidad del usuario!.
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <ExampleCarouselImage text="Perifericos" />
+        <img
+          className="d-block w-100 img-carousel"
+          src="public/imagenes/mouses/corsair/m75-wireless.jpg"
+          alt="Mouse CORSAIR"
+        />
         <Carousel.Caption>
           <h3 className="tech-one">Perifericos favoritos</h3>
           <p className="tech-one">
