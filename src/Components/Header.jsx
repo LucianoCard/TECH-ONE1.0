@@ -30,7 +30,7 @@ function Header() {
       expand="lg"
       className="bg-body-tertiary border-top-0 p-4"
     >
-      <Container className="d-flex justify-content-center">
+      <Container>
         <Navbar.Brand as={NavLink} to="/" className="navbar-fuente logo-brillo">
           Tech-One
         </Navbar.Brand>
