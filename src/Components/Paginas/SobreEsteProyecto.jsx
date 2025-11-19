@@ -1,10 +1,8 @@
 import Header from "../Header";
 import Footer from "../Footer";
 import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+
 import { Carrito } from "../Carrito/Carrito";
 
 export function SobreEsteProyecto() {
