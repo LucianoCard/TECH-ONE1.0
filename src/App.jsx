@@ -10,10 +10,10 @@ import Header from "./Components/Header";
 
 function App() {
   return (
-    <div>
+    <div className="contenedor-app">
       <Header></Header>
       <Carrito />
-      <main>
+      <main className="contenido-principal">
         <div id="carrusel" className="border">
           <CarouselFadeExample></CarouselFadeExample>
         </div>

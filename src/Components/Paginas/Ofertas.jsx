@@ -2,12 +2,19 @@ import Header from "../Header";
 import Footer from "../Footer";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import Alert from "react-bootstrap/Alert";
 
 import { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { Carrito } from "../Carrito/Carrito";
+import { añadirProducto } from "../../app/slices/carritoSlice";
 
 const CANTIDAD_OFERTAS = 6;
 
 export function Ofertas() {
+  const dispatch = useDispatch();
+  const [mensajeAlerta, setMensajeAlerta] = useState("");
+  
   useEffect(() => {
     fetch("http://localhost:3000/productos")
       .then((datosDelServidor) => datosDelServidor.json())
@@ -35,16 +42,33 @@ export function Ofertas() {
     return ofertasSeleccionadas;
   };
 
+  const handleAgregar = (item) => {
+    dispatch(añadirProducto(item));
+    setMensajeAlerta("Producto añadido correctamente");
+    setTimeout(() => {
+      setMensajeAlerta("");
+    }, 3000);
+  };
+
   return (
     <div>
       <Header></Header>
+      <Carrito />
       <main>
+        {mensajeAlerta && (
+          <Alert
+            variant="success"
+            className="alerta-flotante alerta-personalizada"
+          >
+            {mensajeAlerta}
+          </Alert>
+        )}
         <h1 className=" logo-brillo d-flex justify-content-center glow-border mt-4 p-4">
           Ofertas del dia!
         </h1>
-        <div className="row justify-content-center pt-5">
+        <div className="row justify-content-center pt-5 g-4">
           {ofertasAleatorias.map((item) => (
-            <div key={item.id} className="col-3 ms-5 mb-4 ">
+            <div key={item.id} className="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
               <Card
                 style={{ width: "18rem" }}
                 className=" glow-border navbar-fuente "
@@ -60,10 +84,10 @@ export function Ofertas() {
                   </Card.Text>
                   <div className="d-flex justify-content-center">
                     <Button
-                      className=" botonesActivar logo-brillo botones    "
-                      href=""
+                      className=" botonesActivar logo-brillo botones"
+                      onClick={() => handleAgregar(item)}
                     >
-                      Agregar al carrito <i class="bi bi-cart"></i>
+                      Agregar al carrito <i className="bi bi-cart"></i>
                     </Button>
                   </div>
                 </Card.Body>
