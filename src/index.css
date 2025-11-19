@@ -124,3 +124,7 @@
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(185, 223, 187, 0.5);
 }
+.fotoIntegrante {
+  height: 31rem;
+  padding: 1rem;
+}
