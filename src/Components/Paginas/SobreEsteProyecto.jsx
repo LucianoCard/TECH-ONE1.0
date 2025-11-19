@@ -2,7 +2,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-
+import { Card, Row, Col } from "react-bootstrap";
 import { Carrito } from "../Carrito/Carrito";
 
 export function SobreEsteProyecto() {
@@ -16,31 +16,42 @@ export function SobreEsteProyecto() {
           <Row className="justify-content-center g-4 mb-5">
             <Col md={6} lg={4}>
               <Card className="h-100">
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img
+                  className="fotoIntegrante"
+                  src="public/imagenes/usuarios/d776f77e-b0c3-43a6-8518-4cc626107ce4.jfif"
+                />
                 <Card.Body>
                   <Card.Title className="logo-brillo botones d-flex justify-content-center">
                     Luciano Cardoso
                   </Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content. Some quick example text to build
-                    on the card title and make up the bulk of the card's content.
+                    Mi nombre es Luciano Cardoso, soy un apasionado por la
+                    programacion, intento cada dia mejorar mis habilidades
+                    tecnicas para profesionalizar mi perfil, este proyecto
+                    realizado junto a mi compañera demuestra mi pasion como tal.
                   </Card.Text>
+                  <h5>Encargado del frontend</h5>
                 </Card.Body>
               </Card>
             </Col>
             <Col md={6} lg={4}>
               <Card className="h-100">
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img
+                  className="fotoIntegrante"
+                  variant="top"
+                  src="public/imagenes/usuarios/bb9311e5-c9ee-4154-b24c-af05e63abad3.jfif"
+                />
                 <Card.Body>
                   <Card.Title className="logo-brillo botones d-flex justify-content-center">
                     Nadia Badaraco
                   </Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content. Some quick example text to build
-                    on the card title and make up the bulk of the card's content.
+                    Mi nombre es Nadia Badaraco, apasionada por la
+                    ciberseguridad y con alto conocimiento de tal. Este proyecyo
+                    realizado junto a mi compañero demuestra mis capacidades
+                    para el desarrollo web.
                   </Card.Text>
+                  <h5>Encarcada del backend</h5>
                 </Card.Body>
               </Card>
             </Col>
