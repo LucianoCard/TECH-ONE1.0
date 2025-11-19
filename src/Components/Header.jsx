@@ -21,7 +21,7 @@ function Header() {
   };
 
   const handleShowCart = () => {
-    dispatch(toggleCarrito()); 
+    dispatch(toggleCarrito());
   };
 
   return (
@@ -60,6 +60,14 @@ function Header() {
               }
             >
               <i className="bi bi-info-circle"></i> [Sobre nosotros]
+            </NavLink>
+            <NavLink
+              to="/Sobre-Este-Proyecto"
+              className={({ isActive }) =>
+                `nav-link navbar-fuente ${isActive ? "active tech-one" : ""}`
+              }
+            >
+              <i className="bi bi-info-circle"></i> [Sobre este proyecto]
             </NavLink>
           </Nav>
           <Nav>

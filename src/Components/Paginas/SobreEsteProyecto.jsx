@@ -1,32 +1,42 @@
 import Header from "../Header";
 import Footer from "../Footer";
 import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+import { Card, Row, Col } from "react-bootstrap";
 
 export function SobreEsteProyecto() {
   return (
     <>
       <Header></Header>
       <main className="  glow-border pb-4 pt-4">
-        <div className="d-flex justify-content-center row navbar-fuente gap-4">
+        <div className="d-flex justify-content-center row navbar-fuente gap-4 ">
           <h1 className="d-flex justify-content-center col-12 logo-brillo">
             Integrantes:
           </h1>
-          <Card className="col-3">
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title className="logo-brillo botones d-flex justify-content-center">
-                Luciano Cardoso
-              </Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content. Some quick example text to build
-                on the card title and make up the bulk of the card's content.
-              </Card.Text>
-            </Card.Body>
+          <Card className="col-3 ">
+            <div className="row">
+              <Card.Img
+                className="fotoIntegrante col-2 "
+                src="public/imagenes/usuarios/d776f77e-b0c3-43a6-8518-4cc626107ce4.jfif"
+              />
+              <Card.Body className="col-6">
+                <Card.Title className="logo-brillo botones d-flex justify-content-center">
+                  Luciano Cardoso
+                </Card.Title>
+                <Card.Text className="">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content. Some quick example text to
+                  build on the card title and make up the bulk of the card's
+                  content.
+                </Card.Text>
+              </Card.Body>
+            </div>
           </Card>
-          <Card className="col-3">
-            <Card.Img variant="top" src="holder.js/100px180" />
+
+          <Card className="col-3 ">
+            <Card.Img
+              className="fotoIntegrante"
+              src="public/imagenes/usuarios/bb9311e5-c9ee-4154-b24c-af05e63abad3.jfif"
+            />
             <Card.Body>
               <Card.Title className="logo-brillo botones d-flex justify-content-center">
                 Nadia Badaraco
