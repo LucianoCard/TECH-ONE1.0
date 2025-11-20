@@ -39,7 +39,7 @@ export function SobreEsteProyecto() {
                 <Card.Img
                   className="fotoIntegrante"
                   variant="top"
-                  src="public/imagenes/usuarios/bb9311e5-c9ee-4154-b24c-af05e63abad3.jfif"
+                  src="public\imagenes\usuarios\imagen-nadia.png"
                 />
                 <Card.Body>
                   <Card.Title className="logo-brillo botones d-flex justify-content-center">
