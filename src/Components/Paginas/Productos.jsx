@@ -9,18 +9,36 @@ import Alert from "react-bootstrap/Alert";
 import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { añadirProducto } from "../../app/slices/carritoSlice";
+import { useLocation } from "react-router-dom";
 
 export function Productos() {
   const dispatch = useDispatch();
+  const location = useLocation();
   let [filtro, Setfiltro] = useState("");
   let [guardarProductos, SetguardarProductos] = useState([]);
   const [mensajeAlerta, setMensajeAlerta] = useState("");
 
+  const categoriaAMapear = {
+    "Sillas": 10,
+    "Monitores": 5,
+    "Tarjetas Gráficas": 4,
+    "Teclados": 11,
+  };
+
   useEffect(() => {
-    fetch("http://localhost:3000/productos?" + filtro)
+    const params = new URLSearchParams(location.search);
+    const categoriaDesdeURL = params.get("categoria");
+
+    if (categoriaDesdeURL && categoriaAMapear[categoriaDesdeURL]) {
+      Setfiltro(`categoriaId=${categoriaAMapear[categoriaDesdeURL]}`);
+    } else {
+      Setfiltro("productos?");
+    }
+
+    fetch(`http://localhost:3000/productos?${filtro}`)
       .then((datosDelServidor) => datosDelServidor.json())
       .then((producto) => SetguardarProductos(producto));
-  }, [filtro]);
+  }, [filtro, location.search]);
 
   const handleAgregar = (item) => {
     dispatch(añadirProducto(item));
