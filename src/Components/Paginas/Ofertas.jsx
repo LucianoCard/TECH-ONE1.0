@@ -1,12 +1,9 @@
-import Header from "../Header";
-import Footer from "../Footer";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Alert from "react-bootstrap/Alert";
 
 import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { Carrito } from "../Carrito/Carrito";
 import { añadirProducto } from "../../app/slices/carritoSlice";
 
 const CANTIDAD_OFERTAS = 6;
@@ -51,9 +48,6 @@ export function Ofertas() {
   };
 
   return (
-    <div>
-      <Header></Header>
-      <Carrito />
       <main>
         {mensajeAlerta && (
           <Alert
@@ -96,7 +90,5 @@ export function Ofertas() {
           ))}
         </div>
       </main>
-      <Footer></Footer>
-    </div>
   );
 }

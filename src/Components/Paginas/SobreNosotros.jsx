@@ -1,10 +1,6 @@
-import Header from "../Header";
-import Footer from "../Footer";
 import Card from "react-bootstrap/Card";
 export function SobreNosotros() {
   return (
-    <>
-      <Header></Header>
       <main>
         <div className="glow-border row">
           <div className=" d-flex justify-content-center mt-5 mb-5 col-12">
@@ -70,7 +66,5 @@ export function SobreNosotros() {
           </div>
         </div>
       </main>
-      <Footer></Footer>
-    </>
   );
 }

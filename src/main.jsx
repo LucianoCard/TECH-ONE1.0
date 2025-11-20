@@ -20,34 +20,40 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-  },
-  {
-    path: "/Sobre-Este-Proyecto",
-    element: <SobreEsteProyecto />,
-  },
-  {
-    path: "/Productos",
-    element: <Productos />,
-  },
-  {
-    path: "/Ofertas",
-    element: <Ofertas />,
-  },
-  {
-    path: "/Sobre-nosotros",
-    element: <SobreNosotros />,
-  },
-  {
-    path: "/login",
-    element: <IniciarSesion />,
-  },
-  {
-    path: "/registro",
-    element: <CrearCuenta />,
-  },
-  {
-    path: "/recuperar-contraseña",
-    element: <RecuperarContraseña />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "/Sobre-Este-Proyecto",
+        element: <SobreEsteProyecto />,
+      },
+      {
+        path: "/Productos",
+        element: <Productos />,
+      },
+      {
+        path: "/Ofertas",
+        element: <Ofertas />,
+      },
+      {
+        path: "/Sobre-nosotros",
+        element: <SobreNosotros />,
+      },
+      {
+        path: "/login",
+        element: <IniciarSesion />,
+      },
+      {
+        path: "/registro",
+        element: <CrearCuenta />,
+      },
+      {
+        path: "/recuperar-contraseña",
+        element: <RecuperarContraseña />,
+      },
+    ],
   },
 ]);
 

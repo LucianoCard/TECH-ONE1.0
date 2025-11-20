@@ -7,10 +7,17 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Alert from "react-bootstrap/Alert";
 
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+
+import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import Alert from "react-bootstrap/Alert";
+
 import { login } from "../../app/slices/authSlice";
 
-import Header from "../Header";
-import Footer from "../Footer";
 import "./IniciarSesion.css";
 
 export function IniciarSesion() {
@@ -52,9 +59,7 @@ export function IniciarSesion() {
   };
 
   return (
-    <>
-      <Header />
-
+    <main>
       <Container className="d-flex justify-content-center align-items-center vh-100">
         <div className="login-container p-5 rounded">
           <h2 className="login-titulo">Iniciar Sesión</h2>
@@ -111,8 +116,6 @@ export function IniciarSesion() {
           </div>
         </div>
       </Container>
-
-      <Footer />
-    </>
+    </main>
   );
 }
