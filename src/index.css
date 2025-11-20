@@ -128,3 +128,35 @@
   height: 31rem;
   padding: 1rem;
 }
+.texto-descripcion {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.imagendifuminar {
+  -webkit-mask-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  );
+  mask-image: linear-gradient(to left);
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .divSobrenosotros {
+    text-align: center; /* Centra texto en mobile */
+    padding: 20px;
+  }
+
+  .texto-descripcion {
+    font-size: 1.1rem; /* Un poco más legible */
+    margin-top: 10px;
+  }
+
+  .imagendifuminar {
+    margin-top: 20px;
+    -webkit-mask-image: none; /* Saca el degradado en mobile si molesta */
+    mask-image: none;
+    border-radius: 8px;
+  }
+}

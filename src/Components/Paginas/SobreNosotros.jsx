@@ -1,32 +1,39 @@
 import Header from "../Header";
 import Footer from "../Footer";
 import Card from "react-bootstrap/Card";
+import { Container } from "react-bootstrap";
 export function SobreNosotros() {
   return (
     <>
       <Header></Header>
-      <main>
-        <div className="glow-border row">
-          <div className=" d-flex justify-content-center mt-5 mb-5 col-12">
-            <Card className="bg-dark text-white w-25 mt-5 ">
-              <Card.Img
-                src="src\Components\imagenLOGO\f35f8dcd-d875-4706-b6db-36c7791c4956.jpg"
-                alt="Card image"
-                className="imagen-Logo"
-              />
-              <Card.ImgOverlay className="text-white glow-border navbar-fuente">
-                <Card.Title className="logo-brillo fs-3 text">
-                  Tech-One
-                </Card.Title>
-                <br />
-                <Card.Text>
-                  Somos una empresa que vende variedad de articulos de
-                  informatica, los mejores para el usuario. Nos enfocamos en la
-                  venta online para el facil acceso de todo el publico.
-                </Card.Text>
-              </Card.ImgOverlay>
-            </Card>
+      <main className="glow-border">
+        <div className="container row p-4 ">
+          <div className=" logo-brillo col-12 col-md-6 pt-5 ps-4 ">
+            <h1>Tech-one</h1>
+            <h2 className=" pt-4  ">
+              Somos una empresa que vende variedad de articulos de informatica,
+              los mejores para el usuario. Nos enfocamos en la venta online para
+              el facil acceso de todo el publico.
+              <br />
+              Las mejores piezas para tu consumo, gracias por confiar en
+              nosotros.
+            </h2>
           </div>
+
+          <div className="col-12 col-md-6 ">
+            <img
+              className="imagendifuminar "
+              src="src/Components/imagenLOGO/f35f8dcd-d875-4706-b6db-36c7791c4956.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div>
+          <h1 className="logo-brillo d-flex justify-content-center glow-border mt-4 p-4">
+            Contacto
+          </h1>
+        </div>
+        <div className=" container mt-5 ">
           <div className="d-flex justify-content-center mb-5 gap-4 navbar-fuente">
             <Card
               border="dark"
