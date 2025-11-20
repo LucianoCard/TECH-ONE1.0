@@ -158,7 +158,7 @@ export function Productos() {
           <div key={item.id} className="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
             <Card
               style={{ width: "18rem" }}
-              className=" glow-border navbar-fuente "
+              className=" navbar-fuente border-0 "
             >
               <Card.Img src={item.imagen} />
               <Card.Body>
