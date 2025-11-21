@@ -1,0 +1,1147 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "categoriaId": 1,
+      "nombre": "Cooler por Aire",
+      "marca": "be quiet!",
+      "modelo": "Dark Rock Pro 5",
+      "descripcion": "Disipador de doble torre de gama alta que ofrece un rendimiento de refrigeración inmenso con un ruido mínimo, gracias a sus ventiladores Silent Wings.",
+      "precio": 100,
+      "imagen": "/imagenes/coolers/be-quiet/dark-rock-pro-5.jpg"
+    },
+    {
+      "id": "2",
+      "categoriaId": 1,
+      "nombre": "Cooler Líquido",
+      "marca": "be quiet!",
+      "modelo": "Pure Loop 2 FX 360mm",
+      "descripcion": "Sistema de refrigeración líquida que combina rendimiento con un funcionamiento silencioso y una estética ARGB.",
+      "precio": 140,
+      "imagen": "/imagenes/coolers/be-quiet/pure-loop-2-fx-360mm.jpg"
+    },
+    {
+      "id": "3",
+      "categoriaId": 1,
+      "nombre": "Cooler por Aire",
+      "marca": "Cooler Master",
+      "modelo": "Hyper 622 Halo",
+      "descripcion": "Disipador de doble torre con dos ventiladores Halo² de 120mm, que ofrece una refrigeración potente con una estética ARGB llamativa.",
+      "precio": 70,
+      "imagen": "/imagenes/coolers/cooler-master/hyper-622-halo.jpg"
+    },
+    {
+      "id": "4",
+      "categoriaId": 1,
+      "nombre": "Cooler Líquido",
+      "marca": "Cooler Master",
+      "modelo": "MasterLiquid 360 Atmos",
+      "descripcion": "La nueva generación de AIOs de la marca, con un enfoque en la personalización y un rendimiento de refrigeración mejorado.",
+      "precio": 130,
+      "imagen": "/imagenes/coolers/cooler-master/masterliquid-360-atmos.jpg"
+    },
+    {
+      "id": "5",
+      "categoriaId": 1,
+      "nombre": "Cooler Líquido",
+      "marca": "Corsair",
+      "modelo": "Nautilus 240 ARGB",
+      "descripcion": "Opción de 240mm con un diseño enfocado en la iluminación ARGB y un rendimiento eficiente.",
+      "precio": 130,
+      "imagen": "/imagenes/coolers/corsair/nautilus-240-argb.jpg"
+    },
+    {
+      "id": "6",
+      "categoriaId": 1,
+      "nombre": "Cooler por Aire",
+      "marca": "Corsair",
+      "modelo": "A115",
+      "descripcion": "Disipador de aire de alto rendimiento con seis heatpipes y dos ventiladores de 140mm, compitiendo con los mejores del mercado.",
+      "precio": 90,
+      "imagen": "/imagenes/coolers/corsair/a115.jpg"
+    },
+    {
+      "id": "7",
+      "categoriaId": 1,
+      "nombre": "Cooler por Aire",
+      "marca": "Noctua",
+      "modelo": "NH-D15",
+      "descripcion": "El rey del rendimiento en refrigeración por aire. Doble torre con dos ventiladores de 140mm, ideal para overclocking y CPUs de alta gama.",
+      "precio": 110,
+      "imagen": "/imagenes/coolers/noctua/nh-d15.jpg"
+    },
+    {
+      "id": "8",
+      "categoriaId": 1,
+      "nombre": "Cooler por Aire",
+      "marca": "Noctua",
+      "modelo": "NH-U14S",
+      "descripcion": "Disipador de torre única con un ventilador de 140mm, excelente equilibrio entre rendimiento y compatibilidad.",
+      "precio": 75,
+      "imagen": "/imagenes/coolers/noctua/nh-u14s.jpg"
+    },
+    {
+      "id": "9",
+      "categoriaId": 2,
+      "nombre": "Escritorio",
+      "marca": "Arozzi",
+      "modelo": "Arena",
+      "descripcion": "El escritorio gaming más icónico de la marca. 160 cm de ancho, superficie curvada y una alfombrilla a medida resistente al agua.",
+      "precio": 449,
+      "imagen": "/imagenes/escritorios/arozzi/arena.jpg"
+    },
+    {
+      "id": "10",
+      "categoriaId": 2,
+      "nombre": "Escritorio",
+      "marca": "FlexiSpot",
+      "modelo": "Esben Standing Desk UD4",
+      "descripcion": "Diseño moderno con patas de madera y cajones incorporados, combinando estética y ergonomía.",
+      "precio": 599,
+      "imagen": "/imagenes/escritorios/flexispot/esben-standing-desk-ud4.jpg"
+    },
+    {
+      "id": "11",
+      "categoriaId": 2,
+      "nombre": "Escritorio",
+      "marca": "FlexiSpot",
+      "modelo": "L-Shaped Standing Desk E3L",
+      "descripcion": "Escritorio en forma de L de altura regulable, perfecto para aprovechar las esquinas y tener un amplio espacio de trabajo.",
+      "precio": 799,
+      "imagen": "/imagenes/escritorios/flexispot/l-shaped-standing-desk-e3l.jpg"
+    },
+    {
+      "id": "12",
+      "categoriaId": 2,
+      "nombre": "Escritorio",
+      "marca": "SecretLab",
+      "modelo": "MAGNUS Pro",
+      "descripcion": "Escritorio de altura regulable con una sola pata y un sistema de gestión de cables totalmente integrado en la estructura. Construcción de acero.",
+      "precio": 799,
+      "imagen": "/imagenes/escritorios/secretlab/magnus-pro.jpg"
+    },
+    {
+      "id": "13",
+      "categoriaId": 2,
+      "nombre": "Escritorio",
+      "marca": "SecretLab",
+      "modelo": "MAGNUS Metal Desk",
+      "descripcion": "Escritorio de altura fija con construcción en acero y ecosistema magnético.",
+      "precio": 499,
+      "imagen": "/imagenes/escritorios/secretlab/magnus-metal-desk.jpg"
+    },
+    {
+      "id": "14",
+      "categoriaId": 2,
+      "nombre": "Escritorio",
+      "marca": "Vari",
+      "modelo": "Standing Desk 48x24",
+      "descripcion": "Un tamaño más compacto de su escritorio eléctrico, ideal para apartamentos o espacios de trabajo más pequeños.",
+      "precio": 645,
+      "imagen": "/imagenes/escritorios/vari/standing-desk-48x24.jpg"
+    },
+    {
+      "id": "15",
+      "categoriaId": 2,
+      "nombre": "Escritorio",
+      "marca": "Vari",
+      "modelo": "Electric Standing Desk",
+      "descripcion": "Su modelo más popular. Se monta en minutos, es extremadamente estable y está disponible en varios tamaños y acabados.",
+      "precio": 695,
+      "imagen": "/imagenes/escritorios/vari/electric-standing-desk.jpg"
+    },
+    {
+      "id": "16",
+      "categoriaId": 3,
+      "nombre": "Fuente de poder",
+      "marca": "Cooler Master",
+      "modelo": "V850 SFX Gold",
+      "descripcion": "850W, 80 Plus Gold, Totalmente Modular. Potencia y eficiencia en un formato compacto SFX.",
+      "precio": 150,
+      "imagen": "/imagenes/fuentes/cooler-master/v850-sfx-gold.jpg"
+    },
+    {
+      "id": "17",
+      "categoriaId": 3,
+      "nombre": "Fuente de poder",
+      "marca": "Cooler Master",
+      "modelo": "XG850 Plus Platinum",
+      "descripcion": "850W, 80 Plus Platinum, Totalmente Modular, con pantalla de monitoreo.",
+      "precio": 220,
+      "imagen": "/imagenes/fuentes/cooler-master/xg850-plus-platinum.jpg"
+    },
+    {
+      "id": "18",
+      "categoriaId": 3,
+      "nombre": "Fuente de poder",
+      "marca": "Corsair",
+      "modelo": "AX1600i",
+      "descripcion": "1600W, 80 Plus Titanium, Digital, Totalmente Modular. Ideal para entusiastas con múltiples tarjetas gráficas.",
+      "precio": 650,
+      "imagen": "/imagenes/fuentes/corsair/ax1600i.jpg"
+    },
+    {
+      "id": "19",
+      "categoriaId": 3,
+      "nombre": "Fuente de poder",
+      "marca": "Corsair",
+      "modelo": "SF750",
+      "descripcion": "750W, 80 Plus Platinum, Totalmente Modular. Formato SFX para builds compactos de alto rendimiento.",
+      "precio": 170,
+      "imagen": "/imagenes/fuentes/corsair/sf750.jpg"
+    },
+    {
+      "id": "20",
+      "categoriaId": 3,
+      "nombre": "Fuente de poder",
+      "marca": "MSI",
+      "modelo": "MEG Ai1000P PCIE5",
+      "descripcion": "1000W, 80 Plus Platinum, Totalmente Modular, ATX 3.0. Eficiencia y potencia premium para sistemas de gama alta.",
+      "precio": 300,
+      "imagen": "/imagenes/fuentes/msi/mag-a750bn-pcie5.jpg"
+    },
+    {
+      "id": "21",
+      "categoriaId": 3,
+      "nombre": "Fuente de poder",
+      "marca": "MSI",
+      "modelo": "MAG A750BN PCIE5",
+      "descripcion": "750W, 80 Plus Bronze, No Modular, ATX 3.0. Una opción económica con soporte para las nuevas tecnologías.",
+      "precio": 90,
+      "imagen": "/imagenes/fuentes/msi/meg-ai1000p-pcie5.jpg"
+    },
+    {
+      "id": "22",
+      "categoriaId": 3,
+      "nombre": "Fuente de poder",
+      "marca": "Seasonic",
+      "modelo": "PRIME TX-1600",
+      "descripcion": "1600W, 80 Plus Titanium, Totalmente Modular. Máxima eficiencia y rendimiento para los sistemas más exigentes.",
+      "precio": 600,
+      "imagen": "/imagenes/fuentes/seasonic/prime-tx-1600.jpg"
+    },
+    {
+      "id": "23",
+      "categoriaId": 3,
+      "nombre": "Fuente de poder",
+      "marca": "Seasonic",
+      "modelo": "PRIME TX-850",
+      "descripcion": "850W, 80 Plus Titanium, Totalmente Modular. Eficiencia superior para un consumo energético optimizado.",
+      "precio": 280,
+      "imagen": "/imagenes/fuentes/seasonic/prime-tx-850.jpg"
+    },
+    {
+      "id": "24",
+      "categoriaId": 4,
+      "nombre": "Tarjeta Gráfica",
+      "marca": "AMD",
+      "modelo": "Radeon RX 7600",
+      "descripcion": "La tarjeta de entrada de la serie 7000, diseñada para ofrecer una experiencia excelente en 1080p a un precio muy competitivo.",
+      "precio": 260,
+      "imagen": "/imagenes/graficas/amd/radeon-rx-7600.jpg"
+    },
+    {
+      "id": "25",
+      "categoriaId": 4,
+      "nombre": "Tarjeta Gráfica",
+      "marca": "AMD",
+      "modelo": "Radeon RX 7800 XT",
+      "descripcion": "Considerada una de las mejores tarjetas para gaming en 1440p por su excelente relación rendimiento/precio.",
+      "precio": 499,
+      "imagen": "/imagenes/graficas/amd/radeon-rx-7800-xt.jpg"
+    },
+    {
+      "id": "26",
+      "categoriaId": 4,
+      "nombre": "Tarjeta Gráfica",
+      "marca": "Gigabyte",
+      "modelo": "GAMING OC GeForce RTX 4070 SUPER",
+      "descripcion": "Uno de los modelos más vendidos. Sistema de refrigeración Windforce de 3 ventiladores, fiable y con un buen overclock de fábrica.",
+      "precio": 630,
+      "imagen": "/imagenes/graficas/gigabyte/gaming-oc-geforce-rtx-4070-super.jpg"
+    },
+    {
+      "id": "27",
+      "categoriaId": 4,
+      "nombre": "Tarjeta Gráfica",
+      "marca": "Gigabyte",
+      "modelo": "Eagle OC GeForce RTX 4060",
+      "descripcion": "La serie Eagle ofrece un buen rendimiento y refrigeración de triple ventilador a un precio más accesible.",
+      "precio": 310,
+      "imagen": "/imagenes/graficas/gigabyte/eagle-oc-geforce-rtx-4060.jpg"
+    },
+    {
+      "id": "28",
+      "categoriaId": 4,
+      "nombre": "Tarjeta Gráfica",
+      "marca": "MSI",
+      "modelo": "VENTUS 3X OC GeForce RTX 4060 Ti",
+      "descripcion": "La serie VENTUS se enfoca en el rendimiento. Un diseño sin adornos con una potente refrigeración de triple ventilador.",
+      "precio": 410,
+      "imagen": "/imagenes/graficas/msi/ventus-3x-oc-geforce-rtx-4060-ti.jpg"
+    },
+    {
+      "id": "29",
+      "categoriaId": 4,
+      "nombre": "Tarjeta Gráfica",
+      "marca": "MSI",
+      "modelo": "GAMING X SLIM GeForce RTX 4070 SUPER",
+      "descripcion": "Una versión más delgada de su popular serie GAMING X, ideal para cajas con espacio limitado pero sin renunciar a la estética y rendimiento.",
+      "precio": 650,
+      "imagen": "/imagenes/graficas/msi/gaming-x-slim-geforce-rtx-4070-super.jpg"
+    },
+    {
+      "id": "30",
+      "categoriaId": 4,
+      "nombre": "Tarjeta Gráfica",
+      "marca": "NVIDIA",
+      "modelo": "GeForce RTX 4080 SUPER",
+      "descripcion": "Ofrece un rendimiento excepcional en 4K y es ideal para entusiastas que buscan un rendimiento de élite.",
+      "precio": 999,
+      "imagen": "/imagenes/graficas/nvidia/geforce-rtx-4080-super.jpg"
+    },
+    {
+      "id": "31",
+      "categoriaId": 4,
+      "nombre": "Tarjeta Gráfica",
+      "marca": "NVIDIA",
+      "modelo": "GeForce RTX 3060 (12GB)",
+      "descripcion": "Un éxito de la generación anterior que sigue siendo muy popular por sus 12GB de VRAM, ideal para 1080p y algunas tareas de productividad.",
+      "precio": 270,
+      "imagen": "/imagenes/graficas/nvidia/geforce-rtx-3060-12gb.jpg"
+    },
+    {
+      "id": "32",
+      "categoriaId": 5,
+      "nombre": "Monitor",
+      "marca": "Acer",
+      "modelo": "Nitro VG270 S",
+      "descripcion": "Monitor Acer Nitro VG270 S 27 pulgadas Full HD 165Hz - 2xHDMI, DP",
+      "precio": 425,
+      "imagen": "/imagenes/monitores/acer/nitro-vg270-s.jpg"
+    },
+    {
+      "id": "33",
+      "categoriaId": 5,
+      "nombre": "Monitor",
+      "marca": "Acer",
+      "modelo": "Nitro QG241Y",
+      "descripcion": "Acer Nitro VG270 S tiene altas tasas de refresco (como 100 Hz o 165 Hz), un tiempo de respuesta rápido (1 ms). Además cuenta con tecnología como AMD FreeSync para evitar el tearing y los tirones en la imagen.",
+      "precio": 235,
+      "imagen": "/imagenes/monitores/acer/nitro-qg241y.jpg"
+    },
+    {
+      "id": "34",
+      "categoriaId": 5,
+      "nombre": "Monitor",
+      "marca": "Acer",
+      "modelo": "V226HQL",
+      "descripcion": "Incluye tecnologías para una visualización cómoda, como la reducción de parpadeo y la baja atenuación.",
+      "precio": 142,
+      "imagen": "/imagenes/monitores/acer/v226hql.jpg"
+    },
+    {
+      "id": "35",
+      "categoriaId": 5,
+      "nombre": "Monitor",
+      "marca": "Acer",
+      "modelo": "V277E",
+      "descripcion": "Monitor Acer V277E 27 pulgadas Full HD 100Hz - VGA, HDMI, DP",
+      "precio": 172,
+      "imagen": "/imagenes/monitores/acer/v277e.jpg"
+    },
+    {
+      "id": "36",
+      "categoriaId": 5,
+      "nombre": "Monitor",
+      "marca": "BenQ",
+      "modelo": "GW2283",
+      "descripcion": "Monitor Benq GW2283 21.5 pulgadas Full HD Eye-Care - 2xHDMI, VGA",
+      "precio": 107,
+      "imagen": "/imagenes/monitores/benq/gw2283.jpg"
+    },
+    {
+      "id": "37",
+      "categoriaId": 5,
+      "nombre": "Monitor",
+      "marca": "BenQ",
+      "modelo": "G615HDPL",
+      "descripcion": "Monitor BenQ G615HDPL 1366x768 8ms 15.6 pulgadas.",
+      "precio": 103,
+      "imagen": "/imagenes/monitores/benq/g615hdpl.jpg"
+    },
+    {
+      "id": "38",
+      "categoriaId": 5,
+      "nombre": "Monitor",
+      "marca": "BenQ",
+      "modelo": "G2411HD",
+      "descripcion": "Monitor BenQ G2411HD/HDA 5MS 2 pulgadas",
+      "precio": 100,
+      "imagen": "/imagenes/monitores/benq/g2411hd.jpg"
+    },
+    {
+      "id": "39",
+      "categoriaId": 5,
+      "nombre": "Monitor",
+      "marca": "BenQ",
+      "modelo": "PD3420Q",
+      "descripcion": "Monitor de diseño ultra ancho de 34 pulgadas. Está diseñado para profesionales creativos como diseñadores y editores de video.",
+      "precio": 115,
+      "imagen": "/imagenes/monitores/benq/pd3420q.jpg"
+    },
+    {
+      "id": "40",
+      "categoriaId": 5,
+      "nombre": "Monitor",
+      "marca": "HP",
+      "modelo": "WQHD para gaming OMEN",
+      "descripcion": "Monitor curvo de HP de 34 pulgadas y 165 Hz.",
+      "precio": 300,
+      "imagen": "/imagenes/monitores/hp/wqhd-omen.png"
+    },
+    {
+      "id": "41",
+      "categoriaId": 5,
+      "nombre": "Monitor",
+      "marca": "HP",
+      "modelo": "Series 3 Pro 324 PF",
+      "descripcion": "Monitor FHD HP de la serie 3 Pro de 23,8 pulgadas.",
+      "precio": 250,
+      "imagen": "/imagenes/monitores/hp/series-3-pro-324-pf.png"
+    },
+    {
+      "id": "42",
+      "categoriaId": 5,
+      "nombre": "Monitor",
+      "marca": "HP",
+      "modelo": "WQHD+ Thunderbolt 4",
+      "descripcion": "Monitor WQHD+ Thunderbolt 4 de la serie HP Pro 7 de 37,5 pulgadas.",
+      "precio": 450,
+      "imagen": "/imagenes/monitores/hp/wqhd-thunderbolt-4.png"
+    },
+    {
+      "id": "43",
+      "categoriaId": 5,
+      "nombre": "Monitor",
+      "marca": "MSI",
+      "modelo": "Optix G274RW",
+      "descripcion": "Monitor MSI Optix G274RW 170Hz 1MS Tiempo de respuesta.",
+      "precio": 400,
+      "imagen": "/imagenes/monitores/msi/optix-g274rw.png"
+    },
+    {
+      "id": "44",
+      "categoriaId": 5,
+      "nombre": "Monitor",
+      "marca": "MSI",
+      "modelo": "Oculux NXG253R",
+      "descripcion": "Oculux NXG253R 360Hz Extremely High Refresh Rate.",
+      "precio": 500,
+      "imagen": "/imagenes/monitores/msi/oculux-nxg253r.png"
+    },
+    {
+      "id": "45",
+      "categoriaId": 5,
+      "nombre": "Monitor",
+      "marca": "MSI",
+      "modelo": "Optix MAG241C",
+      "descripcion": "Monitor MSI Optix MAG241C curvo de 23.6 pulgadas 144Hz.",
+      "precio": 350,
+      "imagen": "/imagenes/monitores/msi/optix-mag241c.png"
+    },
+    {
+      "id": "46",
+      "categoriaId": 6,
+      "nombre": "Placa Madre",
+      "marca": "ASRock",
+      "modelo": "B760M Pro RS",
+      "descripcion": "Socket Intel LGA1700, B760, Micro-ATX. Una placa económica muy capaz, con soporte PCIe 5.0 y buena conectividad para builds de presupuesto ajustado.",
+      "precio": 130,
+      "imagen": "/imagenes/motherboards/asrock/b760m-pro-rs.jpg"
+    },
+    {
+      "id": "47",
+      "categoriaId": 6,
+      "nombre": "Placa Madre",
+      "marca": "ASRock",
+      "modelo": "X670E Taichi",
+      "descripcion": "Socket AMD AM5, X670E, E-ATX. El buque insignia para AMD, con un VRM extremo y todas las características de conectividad y rendimiento para entusiastas.",
+      "precio": 500,
+      "imagen": "/imagenes/motherboards/asrock/x670e-taichi.jpg"
+    },
+    {
+      "id": "48",
+      "categoriaId": 6,
+      "nombre": "Placa Madre",
+      "marca": "ASUS",
+      "modelo": "ROG STRIX X670E-F GAMING WIFI",
+      "descripcion": "Socket AMD AM5, Chipset X670E, ATX. Gama alta para Ryzen 7000/8000/9000, con PCIe 5.0 para GPU y SSD, y un VRM robusto para overclocking.",
+      "precio": 420,
+      "imagen": "/imagenes/motherboards/asus/rog-strix-x670e-f-gaming-wifi.jpg"
+    },
+    {
+      "id": "49",
+      "categoriaId": 6,
+      "nombre": "Placa Madre",
+      "marca": "ASUS",
+      "modelo": "TUF GAMING B650-PLUS WIFI",
+      "descripcion": "Socket AMD AM5, Chipset B650, ATX. Una de las mejores opciones en calidad-precio para AMD. Robusta, fiable y con todo lo necesario para un PC gaming moderno.",
+      "precio": 200,
+      "imagen": "/imagenes/motherboards/asus/tuf-gaming-b650-plus-wifi.jpg"
+    },
+    {
+      "id": "50",
+      "categoriaId": 6,
+      "nombre": "Placa Madre",
+      "marca": "Gigabyte",
+      "modelo": "Z790 AORUS ELITE AX",
+      "descripcion": "Socket Intel LGA1700, Z790, ATX. Una de las placas Z790 más recomendadas por su increíble balance entre precio, características y rendimiento.",
+      "precio": 250,
+      "imagen": "/imagenes/motherboards/gigabyte/z790-aorus-elite-ax.jpg"
+    },
+    {
+      "id": "51",
+      "categoriaId": 6,
+      "nombre": "Placa Madre",
+      "marca": "Gigabyte",
+      "modelo": "X670E AORUS MASTER",
+      "descripcion": "Socket AMD AM5, X670E, E-ATX. Placa de gama entusiasta para AMD, con 4 ranuras M.2 PCIe 5.0 y una entrega de potencia de élite.",
+      "precio": 500,
+      "imagen": "/imagenes/motherboards/gigabyte/x670e-aorus-master.jpg"
+    },
+    {
+      "id": "52",
+      "categoriaId": 6,
+      "nombre": "Placa Madre",
+      "marca": "MSI",
+      "modelo": "MAG Z790 TOMAHAWK MAX WIFI",
+      "descripcion": "Socket Intel LGA1700, Z790, ATX. Un referente en la gama media-alta, conocida por su excelente rendimiento térmico y su diseño robusto.",
+      "precio": 290,
+      "imagen": "/imagenes/motherboards/msi/mag-z790-tomahawk-max-wifi.jpg"
+    },
+    {
+      "id": "53",
+      "categoriaId": 6,
+      "nombre": "Placa Madre",
+      "marca": "MSI",
+      "modelo": "B760 GAMING PLUS WIFI",
+      "descripcion": "Socket Intel LGA1700, B760, ATX. Placa base de gran valor que ofrece un rendimiento sólido para juegos sin necesidad de overclocking.",
+      "precio": 170,
+      "imagen": "/imagenes/motherboards/msi/b760-gaming-plus-wifi.jpg"
+    },
+    {
+      "id": "54",
+      "categoriaId": 7,
+      "nombre": "Mouse",
+      "marca": "Corsair",
+      "modelo": "Dark Core RGB SE",
+      "descripcion": "Conectividad dual (inalámbrico y con cable), sensor de 16.000 DPI, 9 botones programables, carga inalámbrica Qi, buena batería.",
+      "precio": 109,
+      "imagen": "/imagenes/mouses/corsair/dark-core-rgb-se.jpg"
+    },
+    {
+      "id": "55",
+      "categoriaId": 7,
+      "nombre": "Mouse",
+      "marca": "Corsair",
+      "modelo": "M75 Wireless",
+      "descripcion": "Ambidiestro con sensor de hasta 26.000 DPI, wireless, Bluetooth, 2.4 GHz, batería de gran capacidad, ideal para juego competitivo.",
+      "precio": 139,
+      "imagen": "/imagenes/mouses/corsair/m75-wireless.jpg"
+    },
+    {
+      "id": "56",
+      "categoriaId": 7,
+      "nombre": "Mouse",
+      "marca": "Corsair",
+      "modelo": "Scimitar RGB Elite Wireless MMO",
+      "descripcion": "Mouse para MMO con 16 botones laterales, múltiples modos de conexión incluyendo modo inalámbrico, Bluetooth o cable. Sensor de hasta 26.000 DPI.",
+      "precio": 199,
+      "imagen": "/imagenes/mouses/corsair/scimitar-rgb-elite-wireless-mmo.jpg"
+    },
+    {
+      "id": "57",
+      "categoriaId": 7,
+      "nombre": "Mouse",
+      "marca": "HyperX",
+      "modelo": "Pulsefire Haste 2 Wireless",
+      "descripcion": "Mouse ultra ligero, doble modo inalámbrico con sensor de 26.000 DPI, alcanzando una duración de batería de hasta 100 horas.",
+      "precio": 105,
+      "imagen": "/imagenes/mouses/hyperx/pulsefire-haste-2-wireless.jpg"
+    },
+    {
+      "id": "58",
+      "categoriaId": 7,
+      "nombre": "Mouse",
+      "marca": "HyperX",
+      "modelo": "Pulsefire Fuse Wireless",
+      "descripcion": "Mouse con diseño ambidiestro, conectividad dual y 12.000 DPI. Ideal para largas sesiones de juego.",
+      "precio": 50,
+      "imagen": "/imagenes/mouses/hyperx/pulsefire-fuse-wireless.jpg"
+    },
+    {
+      "id": "59",
+      "categoriaId": 7,
+      "nombre": "Mouse",
+      "marca": "Logitech",
+      "modelo": "MX Master 3S",
+      "descripcion": "Mouse inalámbrico enfocado en productividad, muy cómodo con botones laterales. Ideal para uso mixto de trabajo y juego.",
+      "precio": 119,
+      "imagen": "/imagenes/mouses/logitech/mx-master-3s.jpg"
+    },
+    {
+      "id": "60",
+      "categoriaId": 7,
+      "nombre": "Mouse",
+      "marca": "Logitech",
+      "modelo": "MX Anywhere 3S",
+      "descripcion": "Mouse compacto, portátil, con conexión múltiple y rueda de scroll ultra rápida. Perfecto para uso mixto.",
+      "precio": 111,
+      "imagen": "/imagenes/mouses/logitech/mx-anywhere-3s.jpg"
+    },
+    {
+      "id": "61",
+      "categoriaId": 7,
+      "nombre": "Mouse",
+      "marca": "Logitech",
+      "modelo": "G Pro X Superlight",
+      "descripcion": "Mouse inalámbrico ultraligero, con sensor HERO de alta precisión y 5 botones. Ideal para juegos competitivos por su comodidad y alta duración de batería.",
+      "precio": 149,
+      "imagen": "/imagenes/mouses/logitech/g-pro-x-superlight.jpg"
+    },
+    {
+      "id": "62",
+      "categoriaId": 7,
+      "nombre": "Mouse",
+      "marca": "MSI",
+      "modelo": "Clutch GM31 Lightweight",
+      "descripcion": "Mouse liviano, con sensor PixArt PMW-3360 y 6 botones. Cable flexible FrixionFree, polling rate de 1000Hz.",
+      "precio": 109,
+      "imagen": "/imagenes/mouses/msi/clutch-gm31-lightweight.jpg"
+    },
+    {
+      "id": "63",
+      "categoriaId": 7,
+      "nombre": "Mouse",
+      "marca": "MSI",
+      "modelo": "Clutch GM11",
+      "descripcion": "Mouse con diseño simétrico para diestros y zurdos. Sensor óptico PMW-3325 hasta 5000 DPI con varios niveles predefinidos. Cuenta con iluminación RGB.",
+      "precio": 129,
+      "imagen": "/imagenes/mouses/msi/clutch-gm11.jpg"
+    },
+    {
+      "id": "64",
+      "categoriaId": 7,
+      "nombre": "Clutch GM41 Lightweight Wireless",
+      "marca": "MSI",
+      "modelo": "DeathAdder V3 Pro",
+      "descripcion": "Mouse Wireless + base de carga. Sensor potente de 20.000 DPI con buena autonomía. Perfecto para quienes quieren cableado opcional y comodidad inalámbrica.",
+      "precio": 125,
+      "imagen": "/imagenes/mouses/msi/clutch-gm41-lightweight-wireless.jpg"
+    },
+    {
+      "id": "65",
+      "categoriaId": 7,
+      "nombre": "Mouse",
+      "marca": "Razer",
+      "modelo": "Basilisk V3 Pro Wireless",
+      "descripcion": "Mouse con opción inalámbrica, cableada o por Bluetooth Con sensor de hasta 30.000 DPI y botones programables. Gran diseño ergonómico.",
+      "precio": 109,
+      "imagen": "/imagenes/mouses/razer/basilisk-v3-pro-wireless.jpg"
+    },
+    {
+      "id": "66",
+      "categoriaId": 7,
+      "nombre": "Mouse",
+      "marca": "Razer",
+      "modelo": "DeathAdder V3 Pro",
+      "descripcion": "Muy ligero en su versión ergonómica. Sensor Focus Pro y gran rendimiento inalámbrico brindando clics precisos. Ideal para juegos competitivos.",
+      "precio": 119,
+      "imagen": "/imagenes/mouses/razer/deathadder-v3-pro.jpg"
+    },
+    {
+      "id": "67",
+      "categoriaId": 7,
+      "nombre": "Mouse",
+      "marca": "Razer",
+      "modelo": "Viper V3 Hyperspeed",
+      "descripcion": "Mouse ligero con forma ambidiestra, sensor de alto rendimiento, conectividad inalámbrica veloz. Diseñado para respuesta y velocidad en juegos competitivos.",
+      "precio": 219,
+      "imagen": "/imagenes/mouses/razer/viper-v3-hyperspeed.jpg"
+    },
+    {
+      "id": "68",
+      "categoriaId": 7,
+      "nombre": "Mouse",
+      "marca": "Red Dragon",
+      "modelo": "M601-3 Centrophorus",
+      "descripcion": "Mouse gamer con cableado. DPI ajustable hasta 3.200, botones programables y peso ajustable. Ideal para jugadores que buscan funcionalidad a buen precio.",
+      "precio": 201,
+      "imagen": "/imagenes/mouses/red-dragon/m601-3-centrophorus.jpg"
+    },
+    {
+      "id": "69",
+      "categoriaId": 7,
+      "nombre": "Mouse",
+      "marca": "Red Dragon",
+      "modelo": "M914 Tri-Mode",
+      "descripcion": "Mouse con tres modos de conexión (wireless 2.4G, Bluetooth y cableado). Con botones y buen rendimiento de batería para modo inalámbrico.",
+      "precio": 299,
+      "imagen": "/imagenes/mouses/red-dragon/m914-tri-mode.jpg"
+    },
+    {
+      "id": "70",
+      "categoriaId": 7,
+      "nombre": "Mouse",
+      "marca": "Red Dragon",
+      "modelo": "M693 Wireless",
+      "descripcion": "Mouse con 8.000 DPI, conectividad múltiple, botones macro y gran balance entre peso, rendimiento y costo.",
+      "precio": 199,
+      "imagen": "/imagenes/mouses/red-dragon/m693-wireless.jpg"
+    },
+    {
+      "id": "71",
+      "categoriaId": 8,
+      "nombre": "Procesador",
+      "marca": "Intel",
+      "modelo": "Core i5-12600K",
+      "descripcion": "Procesador CPU Intel Core i5-12600K Socket 1700 10 Núcleos Gráficos UHD 770 S/Fan.",
+      "precio": 285,
+      "imagen": "/imagenes/procesadores/intel/core-i5-12600k.jpg"
+    },
+    {
+      "id": "72",
+      "categoriaId": 8,
+      "nombre": "Procesador",
+      "marca": "Intel",
+      "modelo": "Core i7-12700F",
+      "descripcion": "Procesador CPU Intel Core i7-12700F Socket 1700 12 Nucleos 4.90GHz Turbo.",
+      "precio": 355,
+      "imagen": "/imagenes/procesadores/intel/core-i7-12700f.jpg"
+    },
+    {
+      "id": "73",
+      "categoriaId": 8,
+      "nombre": "Procesador",
+      "marca": "Intel",
+      "modelo": "Core i3-12100F",
+      "descripcion": "Procesador CPU Intel Core i3-12100F Socket 1700 S/video 4 Núcleos.",
+      "precio": 112,
+      "imagen": "/imagenes/procesadores/intel/core-i3-12100f.jpg"
+    },
+    {
+      "id": "74",
+      "categoriaId": 8,
+      "nombre": "Procesador",
+      "marca": "Ryzen",
+      "modelo": "AMD Ryzen 7 5700G",
+      "descripcion": "Procesador CPU AMD Ryzen 7 5700G Socket AM4 8 Núcleos Gráficos Radeon Vega.",
+      "precio": 248,
+      "imagen": "/imagenes/procesadores/ryzen/7-5700g.jpg"
+    },
+    {
+      "id": "75",
+      "categoriaId": 8,
+      "nombre": "Procesador",
+      "marca": "Ryzen",
+      "modelo": "AMD Ryzen 5 5500",
+      "descripcion": "Procesador CPU AMD Ryzen 5 5500 Socket AM4 6 Núcleos Sin Gráficos Integrados.",
+      "precio": 120,
+      "imagen": "/imagenes/procesadores/ryzen/5-5500.jpg"
+    },
+    {
+      "id": "76",
+      "categoriaId": 8,
+      "nombre": "Procesador",
+      "marca": "Ryzen",
+      "modelo": "AMD Ryzen 5 5600X",
+      "descripcion": "Este procesador se basa en la arquitectura Zen 3 de AMD, que ofrece un rendimiento mejorado y una mayor eficiencia. El procesador viene en una caja que también incluye una solución térmica de alto rendimiento, conocida como AMD Wraith.",
+      "precio": 460,
+      "imagen": "/imagenes/procesadores/ryzen/5-5600x.jpg"
+    },
+    {
+      "id": "77",
+      "categoriaId": 9,
+      "nombre": "Memoria RAM",
+      "marca": "HP",
+      "modelo": "V8 DDR4",
+      "descripcion": "Memoria RAM DDR4 8GB 3200MHz HP V8 Gaming RGB Aluminio 7EH85AA DIMM CL16 1.35V.",
+      "precio": 39,
+      "imagen": "/imagenes/rams/hp/v8-ddr4.jpg"
+    },
+    {
+      "id": "78",
+      "categoriaId": 9,
+      "nombre": "Memoria RAM",
+      "marca": "HP",
+      "modelo": "V6 DDR4",
+      "descripcion": "Memoria Ram HP 8GB Ddr4 3000Mhz v6 Black.",
+      "precio": 15,
+      "imagen": "/imagenes/rams/hp/v6-ddr4.jpg"
+    },
+    {
+      "id": "79",
+      "categoriaId": 9,
+      "nombre": "Memoria RAM",
+      "marca": "Vesta",
+      "modelo": "II RGB DDR5",
+      "descripcion": "Memoria RAM DDR5 32GB (2x16GB) Acer Predator Vesta II RGB 6800MHz White Gaming Pro.",
+      "precio": 225,
+      "imagen": "/imagenes/rams/vesta/ii-rgb-ddr5.jpg"
+    },
+    {
+      "id": "80",
+      "categoriaId": 9,
+      "nombre": "Memoria RAM",
+      "marca": "XPG",
+      "modelo": "SPECTRIX D35G DDR4",
+      "descripcion": "Memoria RAM DDR4 16GB 3200MHz Adata XPG Gaming Spectrix D35G Blanca RGB DIMM CL16.",
+      "precio": 77,
+      "imagen": "/imagenes/rams/xpg/spectrix-d35g-ddr4.jpg"
+    },
+    {
+      "id": "81",
+      "categoriaId": 9,
+      "nombre": "Memoria RAM",
+      "marca": "XPG",
+      "modelo": "GAMMIX D35 DDR4",
+      "descripcion": "Memoria RAM DDR4 16GB 3200MHz Adata XPG Gaming Spectrix D35G Negra RGB UDIMM CL16.",
+      "precio": 77,
+      "imagen": "/imagenes/rams/xpg/gammix-d35-ddr4.jpg"
+    },
+    {
+      "id": "82",
+      "categoriaId": 10,
+      "nombre": "Silla",
+      "marca": "Corsair",
+      "modelo": "T3 RUSH",
+      "descripcion": "Presenta un diseño inspirado en las carreras para una estética gamer. Está tapizada con una tela suave y transpirable que minimiza la retención de calor, manteniéndote fresco durante largas sesiones. El interior incluye espuma de poliuretano en el asiento y respaldo para soporte y durabilidad, y las almohadas (cervical y lumbar) están rellenas de espuma viscoelástica y cubiertas de tela de terciopelo para mayor comodidad.",
+      "precio": 279,
+      "imagen": "/imagenes/sillas/corsair/t3-rush.jpg"
+    },
+    {
+      "id": "83",
+      "categoriaId": 10,
+      "nombre": "Silla",
+      "marca": "Corsair",
+      "modelo": "T1 RACE Gaming Chair",
+      "descripcion": "Presenta un diseño agresivo y deportivo, con colores contrastantes y un estilo que evoca los asientos de los automóviles de carreras, ideal para un entorno gamer. Cuenta con un armazón de acero robusto en el asiento y el respaldo, lo que asegura durabilidad y estabilidad. El asiento y el respaldo están acolchados con espuma densa para proporcionar soporte y comodidad durante largas horas de juego.",
+      "precio": 369,
+      "imagen": "/imagenes/sillas/corsair/t1-race-gaming-chair.jpg"
+    },
+    {
+      "id": "84",
+      "categoriaId": 10,
+      "nombre": "Silla",
+      "marca": "Corsair",
+      "modelo": "TC200 Series",
+      "descripcion": "Esta silla está diseñada para ofrecer comodidad y soporte durante largas sesiones de juego o trabajo. Presenta un diseño moderno y ergonómico inspirado en los asientos de competición de automóviles, con un acabado en tela suave y transpirable de color negro, que incorpora secciones perforadas para mejorar la ventilación y evitar la acumulación de calor.",
+      "precio": 399,
+      "imagen": "/imagenes/sillas/corsair/tc200-series.png"
+    },
+    {
+      "id": "85",
+      "categoriaId": 10,
+      "nombre": "Silla",
+      "marca": "Cougar",
+      "modelo": "Armor One",
+      "descripcion": "Esta silla está diseñada para ofrecer comodidad y soporte ergonómico a los gamers durante largas sesiones. Cuenta con un diseño pensado para la ergonomía, con un respaldo alto y la inclusión de almohadas extraíbles para el cuello (apoyacabeza) y la zona lumbar, destinadas a proporcionar soporte y mantener una postura correcta.",
+      "precio": 295,
+      "imagen": "/imagenes/sillas/cougar/armor-one.jpg"
+    },
+    {
+      "id": "86",
+      "categoriaId": 10,
+      "nombre": "Silla",
+      "marca": "Cougar",
+      "modelo": "Speeder",
+      "descripcion": "Silla diseñada para la máxima comodidad y un rendimiento de élite. Inspirada en la estética del automovilismo de alta gama, la Speeder combina un estilo deportivo inigualable con una ergonomía avanzada para ofrecerte la mejor experiencia durante largas sesiones.",
+      "precio": 150,
+      "imagen": "/imagenes/sillas/cougar/speeder-ergonomic.jpg"
+    },
+    {
+      "id": "87",
+      "categoriaId": 10,
+      "nombre": "Silla",
+      "marca": "Cougar",
+      "modelo": "Hotrod Royal",
+      "descripcion": "La Cougar Hotrod Royal es una silla gamer de alta gama diseñada para ofrecer el máximo confort y un rendimiento superior. Su diseño se inspira en el automovilismo deportivo, combinando una estética moderna con una ergonomía avanzada para brindar un soporte óptimo durante largas sesiones.",
+      "precio": 250,
+      "imagen": "/imagenes/sillas/cougar/speeder-ergonomic.jpg"
+    },
+    {
+      "id": "88",
+      "categoriaId": 10,
+      "nombre": "Silla",
+      "marca": "Cougar",
+      "modelo": "DEFENSOR Hyper-Dura Leatherette",
+      "descripcion": "La silla DEFENSOR Hyper-Dura Leatherette está diseñada para ofrecer una experiencia de juego y trabajo excepcionalmente cómoda y duradera. Fabricada con materiales de alta calidad, esta silla combina un diseño ergonómico con una estética moderna y elegante.",
+      "precio": 300,
+      "imagen": "/imagenes/sillas/cougar/defensor-hyper-dura-leatherette.png"
+    },
+    {
+      "id": "89",
+      "categoriaId": 10,
+      "nombre": "Silla",
+      "marca": "Razer",
+      "modelo": "Izkur",
+      "descripcion": "Esta silla es conocida por su sistema de soporte lumbar integrado y ajustable, diseñado para brindar una ergonomía superior a los gamers. El respaldo alto y curvado está diseñado para adaptarse a la forma natural de la columna vertebral, proporcionando soporte adicional en la zona lumbar y ayudando a mantener una postura correcta durante largas sesiones de juego.",
+      "precio": 350,
+      "imagen": "/imagenes/sillas/razer/iskur.png"
+    },
+    {
+      "id": "90",
+      "categoriaId": 10,
+      "nombre": "Silla",
+      "marca": "Razer",
+      "modelo": "TYPE Z Edition™ LEGEND de JYSK",
+      "descripcion": "Colaboración entre JYSK y Razer, diseñada para ofrecer comodidad y soporte a los gamers. Está tapizada en polipiel (cuero sintético), lo que le confiere una apariencia elegante y facilita su limpieza. Incluye cojines para soporte lumbar y cervical, que son esenciales para mantener una postura correcta durante largas sesiones de juego o trabajo.",
+      "precio": 299,
+      "imagen": "/imagenes/sillas/razer/type-z.jpg"
+    },
+    {
+      "id": "91",
+      "categoriaId": 11,
+      "nombre": "Teclado",
+      "marca": "Corsair",
+      "modelo": "K100 RGB",
+      "descripcion": "Teclado mecánico para juegos Corsair K100 RGB con retroiluminación RGB, teclas programables y conmutadores Cherry MX Speed.",
+      "precio": 209,
+      "imagen": "/imagenes/teclados/corsair/k100-rgb.jpg"
+    },
+    {
+      "id": "92",
+      "categoriaId": 11,
+      "nombre": "Teclado",
+      "marca": "Corsair",
+      "modelo": "K70 PRO TKL",
+      "descripcion": "Teclado mecánico tenkeyless con switches MGX V2, retroiluminación RGB y diseño compacto para juegos. Cuenta con reposamuñecas magnético y teclas multimedia dedicadas.",
+      "precio": 180,
+      "imagen": "/imagenes/teclados/corsair/k70-pro-tkl.png"
+    },
+    {
+      "id": "93",
+      "categoriaId": 11,
+      "nombre": "Teclado",
+      "marca": "Corsair",
+      "modelo": "K65 Plus Wireless",
+      "descripcion": "Teclado mecánico compacto con switches lineales MLX Red v2, conectividad inalámbrica y por cable USB-C, retroiluminación RGB y batería de larga duración.",
+      "precio": 179,
+      "imagen": "/imagenes/teclados/corsair/k65-plus-wireless.jpg"
+    },
+    {
+      "id": "94",
+      "categoriaId": 11,
+      "nombre": "Teclado",
+      "marca": "HyperX",
+      "modelo": "Alloy Origins",
+      "descripcion": "Teclado mecánico full-size con switches HyperX Aqua (táctiles), retroiluminación RGB personalizable, cuerpo de aluminio, cable USB-C desmontable y tres ángulos de inclinación ajustables.",
+      "precio": 99,
+      "imagen": "/imagenes/teclados/hyperx/hyperx-alloy-origins.png"
+    },
+    {
+      "id": "95",
+      "categoriaId": 11,
+      "nombre": "Teclado",
+      "marca": "HyperX",
+      "modelo": "Alloy Origins Core",
+      "descripcion": "Teclado versión tenkeyless del Alloy Origins, con switches HyperX Aqua, retroiluminación RGB, cuerpo de aluminio y cable USB-C desmontable.",
+      "precio": 99,
+      "imagen": "/imagenes/teclados/hyperx/hyperx-alloy-origins-core.webp"
+    },
+    {
+      "id": "96",
+      "categoriaId": 11,
+      "nombre": "Teclado",
+      "marca": "HyperX",
+      "modelo": "Alloy Elite 2",
+      "descripcion": "Teclado mecánico full-size con switches HyperX Red (lineales), retroiluminación RGB, teclas multimedia dedicadas, rueda de volumen, reposamuñecas ergonómico y cuerpo de acero.",
+      "precio": 129,
+      "imagen": "/imagenes/teclados/hyperx/hyperx-alloy-elite-2.webp"
+    },
+    {
+      "id": "97",
+      "categoriaId": 11,
+      "nombre": "Teclado",
+      "marca": "Logitech",
+      "modelo": "G915 TKL LIGHTSPEED",
+      "descripcion": "Teclado mecánico inalámbrico tenkeyless con switches GL Táctil, retroiluminación RGB, conectividad LIGHTSPEED y Bluetooth, batería recargable y perfil ultradelgado.",
+      "precio": 90,
+      "imagen": "/imagenes/teclados/logitech/g915-tkl-lightspeed.jpg"
+    },
+    {
+      "id": "98",
+      "categoriaId": 11,
+      "nombre": "Teclado",
+      "marca": "Logitech",
+      "modelo": "G413 TKL SE",
+      "descripcion": "Teclado mecánico tenkeyless con switches Romer-G Táctil, retroiluminación blanca, cuerpo de aluminio y cable USB-C desmontable.",
+      "precio": 45,
+      "imagen": "/imagenes/teclados/logitech/g413-tkl-se.jpg"
+    },
+    {
+      "id": "99",
+      "categoriaId": 11,
+      "nombre": "Teclado",
+      "marca": "MSI",
+      "modelo": "Vigor GK71 Sonic",
+      "descripcion": "Teclado mecánico para juegos MSI Vigor GK71 Sonic con switches ópticos, retroiluminación RGB y reposamuñecas magnético.",
+      "precio": 99,
+      "imagen": "/imagenes/teclados/msi/vigor-gk71-sonic.jpg"
+    },
+    {
+      "id": "100",
+      "categoriaId": 11,
+      "nombre": "Teclado",
+      "marca": "MSI",
+      "modelo": "Forge GK310 (Red Switches)",
+      "descripcion": "Teclado mecánico para juegos MSI Forge GK310 con switches mecánicos rojos, retroiluminación RGB y diseño compacto.",
+      "precio": 45,
+      "imagen": "/imagenes/teclados/msi/forge-gk310-red-switches.png"
+    },
+    {
+      "id": "101",
+      "categoriaId": 11,
+      "nombre": "Teclado",
+      "marca": "Razer",
+      "modelo": "BlackWidow V4 Pro",
+      "descripcion": "Teclado mecánico para juegos Razer BlackWidow V4 Pro con switches Razer Green, retroiluminación RGB y reposamuñecas ergonómico.",
+      "precio": 229,
+      "imagen": "/imagenes/teclados/razer/blackwidow-v4-pro.jpg"
+    },
+    {
+      "id": "102",
+      "categoriaId": 11,
+      "nombre": "Teclado",
+      "marca": "Razer",
+      "modelo": "Huntsman V2 Analog",
+      "descripcion": "Teclado mecánico para juegos Razer Huntsman V2 Analog con switches ópticos analógicos, retroiluminación RGB y reposamuñecas ergonómico.",
+      "precio": 299,
+      "imagen": "/imagenes/teclados/razer/huntsman-v2-analog.jpg"
+    },
+    {
+      "id": "103",
+      "categoriaId": 11,
+      "nombre": "Teclado",
+      "marca": "Razer",
+      "modelo": "DeathStalker V2 Pro",
+      "descripcion": "Teclado mecánico inalámbrico Razer DeathStalker V2 Pro con switches ópticos, retroiluminación RGB y conectividad inalámbrica y por cable.",
+      "precio": 248,
+      "imagen": "/imagenes/teclados/razer/deathstalker-v2-pro.jpg"
+    },
+    {
+      "id": "104",
+      "categoriaId": 11,
+      "nombre": "Teclado",
+      "marca": "Razer",
+      "modelo": "Draconic K530RGB",
+      "descripcion": "Teclado mecánico compacto Razer Draconic K530RGB con switches ópticos, retroiluminación RGB y diseño tenkeyless.",
+      "precio": 70,
+      "imagen": "/imagenes/teclados/red-dragon/draconic-k530rgb.avif"
+    },
+    {
+      "id": "105",
+      "categoriaId": 12,
+      "nombre": "Gabinete",
+      "marca": "Corsair",
+      "modelo": "iCUE 5000X RGB Mid-Tower",
+      "descripcion": "Gabinete Mid-Tower Corsair iCUE 5000X RGB con paneles de vidrio templado, tres ventiladores RGB incluidos y soporte para refrigeración líquida.",
+      "precio": 241,
+      "imagen": "/imagenes/gabinetes/corsair/icue-500x-rgb-mid-tower.jpg"
+    },
+    {
+      "id": "106",
+      "categoriaId": 12,
+      "nombre": "Gabinete",
+      "marca": "NZXT",
+      "modelo": "H5 Elite (2023)",
+      "descripcion": "Gabinete Mid-Tower NZXT H5 Elite con panel frontal de malla para mejor flujo de aire, panel lateral de vidrio templado y soporte para refrigeración líquida.",
+      "precio": 241,
+      "imagen": "/imagenes/gabinetes/nzxt/h5-elite-2023.jpg"
+    },
+    {
+      "id": "107",
+      "categoriaId": 12,
+      "nombre": "Gabinete",
+      "marca": "Thermaltake",
+      "modelo": "View 51 TG ARGB Full-Tower",
+      "descripcion": "Gabinete Full-Tower Thermaltake View 51 TG ARGB con paneles de vidrio templado, cuatro ventiladores ARGB incluidos y soporte para refrigeración líquida.",
+      "precio": 229,
+      "imagen": "/imagenes/gabinetes/thermaltake/view-51-tg-argb-full-tower.jpg"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "nombre": "Coolers"
+    },
+    {
+      "id": "2",
+      "nombre": "Escritorios"
+    },
+    {
+      "id": "3",
+      "nombre": "Fuentes"
+    },
+    {
+      "id": "4",
+      "nombre": "Tarjetas Gráficas"
+    },
+    {
+      "id": "5",
+      "nombre": "Monitores"
+    },
+    {
+      "id": "6",
+      "nombre": "Placas Madre"
+    },
+    {
+      "id": "7",
+      "nombre": "Mouses"
+    },
+    {
+      "id": "8",
+      "nombre": "Procesadores"
+    },
+    {
+      "id": "9",
+      "nombre": "Memorias RAM"
+    },
+    {
+      "id": "10",
+      "nombre": "Sillas"
+    },
+    {
+      "id": "11",
+      "nombre": "Teclados"
+    },
+    {
+      "id": "12",
+      "nombre": "Gabinetes"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "nombre": "Admin",
+      "email": "admin@techone.com",
+      "password": "admin1234",
+      "foto": "/imagenes/usuarios/avatar-default.png"
+    },
+    {
+      "id": "2",
+      "nombre": "Luciano_Cardoso",
+      "email": "luciano@techone.com",
+      "password": "luciano1234",
+      "foto": "/imagenes/usuarios/avatar-default.png"
+    },
+    {
+      "id": "3",
+      "nombre": "Nadia_Badaraco",
+      "email": "nadia@techone.com",
+      "password": "nadia1234",
+      "foto": "/imagenes/usuarios/avatar-default.png"
+    }
+  ]
+}
