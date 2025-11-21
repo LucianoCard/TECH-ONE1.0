@@ -41,10 +41,10 @@ export function SobreEsteProyecto() {
                   Nadia Badaraco
                 </Card.Title>
                 <Card.Text>
-                  Mi nombre es Nadia Badaraco, apasionada por la
-                  ciberseguridad y con amplio conocimiento en la disciplina.
-                  Este proyecto, realizado junto a mi compañero, demuestra mis
-                  capacidades para el desarrollo web.
+                  Mi nombre es Nadia Badaraco, apasionada por la ciberseguridad
+                  y con amplio conocimiento en la disciplina. Este proyecto,
+                  realizado junto a mi compañero, demuestra mis capacidades para
+                  el desarrollo web.
                 </Card.Text>
                 <h5>Encargada del backend</h5>
               </Card.Body>
@@ -65,7 +65,7 @@ export function SobreEsteProyecto() {
               sobre este trabajo, <br /> ¡entra al siguiente enlace!
             </Card.Text>
             <a
-              href="https://github.com/LucianoCard/Tech-ONE"
+              href="https://github.com/LucianoCard/TECH-ONE1.0"
               className="botones botonesActivar text-dark p-2"
             >
               Github
@@ -76,4 +76,3 @@ export function SobreEsteProyecto() {
     </main>
   );
 }
-
