@@ -15,6 +15,7 @@ import { IniciarSesion } from "./Components/Paginas/IniciarSesion.jsx";
 import { CrearCuenta } from "./Components/Paginas/CrearCuenta.jsx";
 import { RecuperarContraseña } from "./Components/Paginas/RecuperarContraseña.jsx";
 import { SobreEsteProyecto } from "./Components/Paginas/SobreEsteProyecto.jsx";
+import { Contacto } from "./Components/Paginas/Contacto.jsx";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "/recuperar-contraseña",
         element: <RecuperarContraseña />,
+      },
+      {
+        path: "/contacto",
+        element: <Contacto />,
       },
     ],
   },
