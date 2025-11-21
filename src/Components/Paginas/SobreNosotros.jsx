@@ -1,5 +1,3 @@
-import Header from "../Header";
-import Footer from "../Footer";
 import Card from "react-bootstrap/Card";
 import { Container } from "react-bootstrap";
 export function SobreNosotros() {
@@ -77,7 +75,5 @@ export function SobreNosotros() {
           </div>
         </div>
       </main>
-      <Footer></Footer>
-    </>
   );
 }

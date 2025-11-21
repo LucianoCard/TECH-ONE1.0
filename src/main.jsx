@@ -15,39 +15,50 @@ import { IniciarSesion } from "./Components/Paginas/IniciarSesion.jsx";
 import { CrearCuenta } from "./Components/Paginas/CrearCuenta.jsx";
 import { RecuperarContraseña } from "./Components/Paginas/RecuperarContraseña.jsx";
 import { SobreEsteProyecto } from "./Components/Paginas/SobreEsteProyecto.jsx";
+import { Contacto } from "./Components/Paginas/Contacto.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-  },
-  {
-    path: "/Sobre-Este-Proyecto",
-    element: <SobreEsteProyecto />,
-  },
-  {
-    path: "/Productos",
-    element: <Productos />,
-  },
-  {
-    path: "/Ofertas",
-    element: <Ofertas />,
-  },
-  {
-    path: "/Sobre-nosotros",
-    element: <SobreNosotros />,
-  },
-  {
-    path: "/login",
-    element: <IniciarSesion />,
-  },
-  {
-    path: "/registro",
-    element: <CrearCuenta />,
-  },
-  {
-    path: "/recuperar-contraseña",
-    element: <RecuperarContraseña />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "/Sobre-Este-Proyecto",
+        element: <SobreEsteProyecto />,
+      },
+      {
+        path: "/Productos",
+        element: <Productos />,
+      },
+      {
+        path: "/Ofertas",
+        element: <Ofertas />,
+      },
+      {
+        path: "/Sobre-nosotros",
+        element: <SobreNosotros />,
+      },
+      {
+        path: "/login",
+        element: <IniciarSesion />,
+      },
+      {
+        path: "/registro",
+        element: <CrearCuenta />,
+      },
+      {
+        path: "/recuperar-contraseña",
+        element: <RecuperarContraseña />,
+      },
+      {
+        path: "/contacto",
+        element: <Contacto />,
+      },
+    ],
   },
 ]);
 

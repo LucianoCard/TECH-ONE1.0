@@ -48,7 +48,7 @@
   font-family: "VT323", monospace;
   font-size: 1.2rem;
   letter-spacing: 1px;
-  color: #333333;
+  color: #000;
   vertical-align: middle;
 }
 
@@ -60,48 +60,6 @@
 
 .puntero {
   cursor: pointer;
-}
-
-.catalogo-contenedor {
-  padding: 20px;
-}
-
-.catalogo-grilla {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.producto-tarjeta {
-  border: 1px solid #eee;
-  padding: 15px;
-  width: 240px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.producto-imagen {
-  width: 100%;
-  height: 180px;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-
-.producto-nombre {
-  font-size: 1rem;
-  font-weight: bold;
-  min-height: 40px;
-}
-
-.producto-precio {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
-  margin-top: auto;
-  margin-bottom: 10px;
 }
 
 .alert.alerta-flotante {
@@ -125,8 +83,86 @@
   box-shadow: 0 0 10px rgba(185, 223, 187, 0.5);
 }
 .fotoIntegrante {
-  height: 31rem;
-  padding: 1rem;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  object-position: center;
+  padding: 0;
+  display: block;
+}
+
+.titulo-seccion {
+  font-family: "VT323", monospace;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.enlace-tarjeta {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease-in-out;
+}
+
+.enlace-tarjeta:hover {
+  transform: scale(1.03);
+  color: inherit;
+}
+
+.titulo-categoria-tarjeta {
+  font-family: "VT323", monospace;
+  
+}
+
+/* Productos */
+.producto-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.producto-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.producto-card:hover {
+  transform: scale(1.03);
+}
+
+.producto-imagen {
+  height: 220px;
+  object-fit: contain;
+  padding: 0.5rem;
+}
+
+.producto-descripcion {
+  min-height: 80px;
+}
+
+.producto-boton {
+  min-width: 70%;
+}
+
+.precio-novedad {
+  font-family: "VT323", monospace;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #000;
+  text-shadow: none;
+}
+
+.fuente-principal {
+  font-family: "VT323", monospace !important;
+  letter-spacing: 1px;
+}
+
+.home-banner {
+  width: 100%;
+  border-radius: 8px;
 }
 .texto-descripcion {
   margin-top: 20px;

@@ -1,5 +1,3 @@
-import Header from "../Header";
-import Footer from "../Footer";
 import "./CrearCuenta.css";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -62,8 +60,7 @@ export function CrearCuenta() {
   };
 
   return (
-    <>
-      <Header />
+    <main>
       <Container className="d-flex justify-content-center align-items-center vh-100">
         <div className="login-container p-5 rounded">
           <h2 className="login-titulo">Crear Cuenta</h2>
@@ -141,8 +138,6 @@ export function CrearCuenta() {
           </div>
         </div>
       </Container>
-
-      <Footer />
-    </>
+    </main>
   );
 }

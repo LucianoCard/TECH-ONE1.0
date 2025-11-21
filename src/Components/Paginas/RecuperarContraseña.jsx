@@ -1,12 +1,9 @@
-import Header from "../Header";
-import Footer from "../Footer";
 import "./RecuperarContraseña.css";
 import { useState } from "react";
 import { Container } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
 import Alert from "react-bootstrap/Alert";
 
 export function RecuperarContraseña() {
@@ -28,9 +25,7 @@ export function RecuperarContraseña() {
   };
 
   return (
-    <>
-      <Header />
-
+    <main>
       <Container className="d-flex justify-content-center align-items-center vh-100">
         <div className="login-container p-5 rounded">
           <h2 className="login-titulo">Recuperar Contraseña</h2>
@@ -77,7 +72,6 @@ export function RecuperarContraseña() {
           </div>
         </div>
       </Container>
-      <Footer />
-    </>
+    </main>
   );
 }
