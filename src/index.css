@@ -84,10 +84,11 @@
 }
 .fotoIntegrante {
   width: 100%;
-  height: 18rem;
+  height: 20rem;
   object-fit: cover;
-  object-position: top;
-  padding: 1rem;
+  object-position: center;
+  padding: 0;
+  display: block;
 }
 
 .titulo-seccion {
@@ -112,4 +113,31 @@
 .titulo-categoria-tarjeta {
   font-family: "VT323", monospace;
   
+}
+
+/* Productos */
+.producto-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.producto-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.producto-imagen {
+  height: 220px;
+  object-fit: contain;
+  padding: 0.5rem;
+}
+
+.producto-descripcion {
+  min-height: 80px;
+}
+
+.producto-boton {
+  min-width: 70%;
 }

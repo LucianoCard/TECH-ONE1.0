@@ -12,7 +12,7 @@ export function SobreEsteProyecto() {
             <Card className="h-100">
               <Card.Img
                 className="fotoIntegrante"
-                src="public/imagenes/usuarios/d776f77e-b0c3-43a6-8518-4cc626107ce4.jfif"
+                src="/imagenes/usuarios/d776f77e-b0c3-43a6-8518-4cc626107ce4.jfif"
               />
               <Card.Body>
                 <Card.Title className="logo-brillo botones d-flex justify-content-center">
@@ -20,9 +20,10 @@ export function SobreEsteProyecto() {
                 </Card.Title>
                 <Card.Text>
                   Mi nombre es Luciano Cardoso, soy un apasionado por la
-                  programacion, intento cada dia mejorar mis habilidades
-                  tecnicas para profesionalizar mi perfil, este proyecto
-                  realizado junto a mi compañera demuestra mi pasion como tal.
+                  programación; intento cada día mejorar mis habilidades
+                  técnicas para profesionalizar mi perfil. Este proyecto,
+                  realizado junto a mi compañera, demuestra mi pasión por la
+                  tecnología.
                 </Card.Text>
                 <h5>Encargado del frontend</h5>
               </Card.Body>
@@ -33,7 +34,7 @@ export function SobreEsteProyecto() {
               <Card.Img
                 className="fotoIntegrante"
                 variant="top"
-                src="public\imagenes\usuarios\imagen-nadia.png"
+                src="/imagenes/usuarios/imagen-nadia.png"
               />
               <Card.Body>
                 <Card.Title className="logo-brillo botones d-flex justify-content-center">
@@ -41,11 +42,11 @@ export function SobreEsteProyecto() {
                 </Card.Title>
                 <Card.Text>
                   Mi nombre es Nadia Badaraco, apasionada por la
-                  ciberseguridad y con alto conocimiento de tal. Este proyecyo
-                  realizado junto a mi compañero demuestra mis capacidades
-                  para el desarrollo web.
+                  ciberseguridad y con amplio conocimiento en la disciplina.
+                  Este proyecto, realizado junto a mi compañero, demuestra mis
+                  capacidades para el desarrollo web.
                 </Card.Text>
-                <h5>Encarcada del backend</h5>
+                <h5>Encargada del backend</h5>
               </Card.Body>
             </Card>
           </Col>
@@ -56,12 +57,12 @@ export function SobreEsteProyecto() {
           <Card.Body>
             <Card.Title>¿Sobre qué se trata?</Card.Title>
             <Card.Text>
-              Este proyecto se trata de realizar un E-commerce falso, donde
+              Este proyecto consiste en realizar un E-commerce ficticio, donde
               ponemos a prueba todos nuestros conocimientos abordados durante
               todo el año. <br />
               En este E-commerce se pondrán en venta artículos de PC, PC
               armadas, piezas, periféricos, etc. Si quieres ver más detalles
-              sobre este trabajo, <br /> ¡Entra al siguiente link!
+              sobre este trabajo, <br /> ¡entra al siguiente enlace!
             </Card.Text>
             <a
               href="https://github.com/LucianoCard/Tech-ONE"
@@ -75,3 +76,4 @@ export function SobreEsteProyecto() {
     </main>
   );
 }
+
