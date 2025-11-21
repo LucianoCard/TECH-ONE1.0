@@ -1,9 +1,9 @@
 import Card from "react-bootstrap/Card";
 import { Container } from "react-bootstrap";
+
 export function SobreNosotros() {
   return (
     <>
-      <Header></Header>
       <main className="glow-border">
         <div className="container row p-4 ">
           <div className=" logo-brillo col-12 col-md-6 pt-5 ps-4 ">
@@ -75,5 +75,6 @@ export function SobreNosotros() {
           </div>
         </div>
       </main>
+    </>
   );
 }
