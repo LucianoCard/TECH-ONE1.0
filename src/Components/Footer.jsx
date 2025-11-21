@@ -19,7 +19,7 @@ function Footer() {
           <Nav.Link as={Link} to="/sobre-nosotros" className="enlace-footer">
             SOBRE NOSOTROS
           </Nav.Link>
-          <Nav.Link as={Link} to="/contacto" className="enlace-footer">
+          <Nav.Link as={Link} to="/Sobre-nosotros" className="enlace-footer">
             CONTACTO
           </Nav.Link>
         </Nav>
