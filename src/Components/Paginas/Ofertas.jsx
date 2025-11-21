@@ -74,16 +74,16 @@ export function Ofertas() {
                     {item.nombre}{" "}
                   </Card.Title>
                   <Card.Text className="d-flex justify-content-center text-center  ">
-                    {item.descripcion}
-                  </Card.Text>
-                  <div className="d-flex justify-content-center">
-                    <Button
-                      className=" botonesActivar logo-brillo botones"
-                      onClick={() => handleAgregar(item)}
-                    >
-                      Agregar al carrito <i className="bi bi-cart"></i>
-                    </Button>
-                  </div>
+                {item.descripcion}
+              </Card.Text>
+              <div className="d-flex justify-content-center">
+                <Button
+                  className="botonesActivar logo-brillo botones fuente-principal"
+                  onClick={() => handleAgregar(item)}
+                >
+                  Agregar al carrito <i className="bi bi-cart"></i>
+                </Button>
+              </div>
                 </Card.Body>
               </Card>
             </div>

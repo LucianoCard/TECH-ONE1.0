@@ -214,9 +214,12 @@ export function Productos() {
                 <Card.Text className="text-center mb-3 producto-descripcion">
                   {item.descripcion}
                 </Card.Text>
+                {item.precio !== undefined && (
+                  <div className="text-center precio-novedad mb-3">Precio: ${item.precio}</div>
+                )}
                 <div className="d-flex justify-content-center mt-auto">
                   <Button
-                    className="botonesActivar logo-brillo botones producto-boton"
+                    className="botonesActivar logo-brillo botones producto-boton fuente-principal"
                     onClick={() => handleAgregar(item)}
                   >
                     Agregar al carrito <i className="bi bi-cart"></i>
